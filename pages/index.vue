@@ -12,7 +12,7 @@
               </div>
               <div class="mx-2">
                 <a target="_blank" href="https://gokuball.medium.com/gokuball-on-the-nft-market-469f4d804605"
-                   class="btn-secondary justify-center mb-4 md:mb-0">What is GOKU</a>
+                   class="btn-secondary justify-center mb-4 md:mb-0">What is HERO</a>
               </div>
               <div class="mx-2">
                 <a target="_blank" href="https://whitepaper.gokuball.com/" class="btn-secondary justify-center">White
