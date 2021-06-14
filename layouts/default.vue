@@ -108,10 +108,9 @@
       <div class="py-6 flex justify-center text-center">
         <div>
           <img class="mb-4 h-28 mx-auto" src="/logo.png" alt="Gokumoon">
-          <p class="text-2xl">The New Creative NFTs</p>
         </div>
       </div>
-      <div class="py-6 justify-center flex">
+      <div class="py-6 justify-center flex" v-if="false">
         <a target="_blank" href="https://twitter.com/GokuballNFTs" class="mx-3">
           <icon class="md" name="tw"/>
         </a>
@@ -124,7 +123,7 @@
       </div>
       <div class="p-6 border-t bg-purple-50 bg-opacity-20 dark:bg-gray-800 dark:border-gray-700">
         <div class="container mx-auto flex justify-between">
-          <div class="text-gray-500">GOKU © 2021</div>
+          <div class="text-gray-500">HERO © 2021</div>
           <div class="flex">
             <n-link to="/pages/privacy" class="mx-2">Privacy</n-link>
             <n-link to="/pages/about" class="mx-2">About</n-link>

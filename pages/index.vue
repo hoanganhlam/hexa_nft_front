@@ -4,18 +4,18 @@
       <div class="container px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex md:-mx-4 items-center">
           <div class="px-4 md:w-1/2">
-            <h1 class="mb-8 font-bold text-5xl">{{ s1.title }}</h1>
-            <p class="mb-12 text-gray-300">Put your $HEXA to work and collect HERO Cards that you can truly own.</p>
+            <h1 class="mb-8 font-bold text-6xl">{{ s1.title }}</h1>
+            <p class="mb-12">More than a game, Step Hero also has features of a social network with a strong community, helping players on investment to earn money from game.</p>
             <div class="flex flex-col md:flex-row -mx-2">
               <div class="mx-2">
                 <a href="#about" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">About us</a>
               </div>
               <div class="mx-2">
-                <a target="_blank" href="https://gokuball.medium.com/gokuball-on-the-nft-market-469f4d804605"
+                <a target="_blank" href="#"
                    class="btn-secondary justify-center mb-4 md:mb-0">What is HERO</a>
               </div>
               <div class="mx-2">
-                <a target="_blank" href="https://whitepaper.gokuball.com/" class="btn-secondary justify-center">White
+                <a target="_blank" href="https://whitepaper.stephero.io/" class="btn-secondary justify-center">White
                   Paper</a>
               </div>
             </div>
@@ -48,13 +48,14 @@
               Points</b>.</p>
         </div>
         <div class="flex flex-wrap -mx-4">
-          <div v-for="(item, i) in s3.arr" class="px-4 mb-4 md:mb-8 md:w-1/3">
-            <div class="p-6 rounded h-full" style="background: #23262F">
-              <div class="w-10 mb-4">
+          <div v-for="(item, i) in s3.arr" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
+            <img :src="`/assets/s1/${item.img}.png`" alt="">
+            <div class="absolute top-0 left-0 right-0 bottom-0 p-20 md:p-16 px-32 md:px-28 rounded h-full">
+              <div v-if="false" class="w-10 mb-4">
                 <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" alt="">
               </div>
-              <h4 class="mb-4 font-medium">{{ item.title }}</h4>
-              <p class="text-gray-300">{{ item.desc }}</p>
+              <h4 class="font-medium">{{ item.title }}</h4>
+              <p class="text-sm text-gray-300">{{ item.desc }}</p>
             </div>
           </div>
         </div>
@@ -120,17 +121,14 @@
           <h2 class="text-3xl md:text-5xl mb-4 font-medium mt-4 mb-8">{{ s6.title }}</h2>
         </div>
         <div class="flex flex-wrap -mx-4">
-          <div v-for="(item, i) in s6.arr" :key="i" class="px-4 mb-4 md:mb-8 md:w-1/4">
-            <div class="flex flex-col p-6 h-full" style="background: #23262F;">
-              <span
-                :style="{'background': item.color}"
-                class="text-sm rounded rounded-full w-8 flex justify-center items-center h-8 font-bold">{{
-                  i + 1
-                }}</span>
-              <div class="mt-2">
-                <h4 class="mb-2">{{ item.title }}</h4>
-                <p class="text-gray-400">{{ item.desc }}</p>
+          <div v-for="(item, i) in s6.arr" :key="i" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
+            <img :src="`/assets/s1/${item.img}.png`" alt="">
+            <div class="absolute top-0 left-0 right-0 bottom-0 p-20 md:p-16 px-32 md:px-28 rounded h-full">
+              <div v-if="false" class="w-10 mb-4">
+                <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" alt="">
               </div>
+              <h4 class="font-medium">{{ item.title }}</h4>
+              <p class="text-sm text-gray-300">{{ item.desc }}</p>
             </div>
           </div>
         </div>
@@ -204,28 +202,31 @@ export default {
   data() {
     return {
       s1: {
-        title: "Farm rare diamond HERO Cards",
+        title: "Fantasy-themed RPG Game",
       },
       s3: {
         title: "HERO farming for NFTs",
         arr: [
           {
-            title: "Classification of HERO cards",
-            desc: "There are 4 levels of HERO cards which are sorted with their scarcity. Including: Copper, Silver, Gold and Diamond Cards."
+            img: 'red',
+            title: "RPG Game",
+            desc: "Plot of Step Hero is based on the scene of a world destroyed by the legion of demon lord Lucifer. Players will take the role of heroes in different eras accompanying archangel Gabriel to fight against the army of shadow."
           },
           {
-            title: "Farming",
-            desc: "You can stake your HERO tokens and receive reward points. Points are earned every day, based on the number of HERO tokens you stake."
+            img: 'green',
+            title: "Heroes Farming",
+            desc: "When users stake HERO, they earn Hexa points. Hexa points are used to redeem NFTs. When it comes to redemption, the corresponding Hexa points are burned."
           },
           {
-            title: "NTFs Market",
-            desc: "Once you earn enough points, you can redeem them for a collectable NFT HERO Card. It entirely depends on you to collect them for yourself or sell them to others on the NFTs Market."
+            img: 'blue',
+            title: "NFTs Marketplace",
+            desc: "Hero NFTs Marketplace is a Multi-Chain based NFTs platform where users can create, sell, and buy NFTs digital content easily."
           },
         ]
       },
       s4: {
-        title: "Genesis Collection",
-        desc: "Collectibles of HERO cards with the uniqueness of each character.",
+        title: "Heroes Collection",
+        desc: "Collectibles of Hero cards with the uniqueness of each character.",
         arr: []
       },
       s5: {
@@ -235,8 +236,8 @@ export default {
           {
             img: null,
             active: false,
-            title: "Can I buy and sell HERO Cards on Treasureland?",
-            desc: "HERO cards are limited and digitally scarce as they are created based on Non‑fungible tokens (NFTs). These special tokens are used on Binance Smart Chain to generate verifiable digital scarcity. You could sell HERO Cards on Treasureland once they reach a certain value which you expect."
+            title: "Can I buy and sell HERO Cards on NFTs market place?",
+            desc: "HERO cards are limited and digitally scarce as they are created based on Non‑fungible tokens (NFTs). These special tokens are used on Binance Smart Chain to generate verifiable digital scarcity. You could sell HERO Cards on NFTs market place once they reach a certain value which you expect."
           },
           {
             img: null,
@@ -251,24 +252,22 @@ export default {
         desc: "a list of commonly asked questions and answers on a website about topics such as hours, shipping and handling, product information, and return policies.",
         arr: [
           {
+            img: 'red',
             color: "#45B26B",
             title: "NFTs Market",
             desc: "NFT Marketplace will be launched in order to buy, sell and trade NFTs. The market will ensure sustainability of the collectible ecosystem."
           },
           {
+            img: 'green',
             color: "#EF466F",
-            title: "Mystery cards",
-            desc: "A series of mystery cards will be released. Each gathered card equals a rate which is eligible for revealing new HERO Cards. More new HERO Cards will be added to NFTs."
+            title: "Weapon NFTs",
+            desc: "A series of Weapon NFTs will be released. It would help to empower the attack and defense's capability of the character"
           },
           {
+            img: 'blue',
             color: "#9757D7",
-            title: "New HERO Cards Level",
-            desc: "With more emerging HERO Cards, Mix Cards will be launched in the near future. Users can mix their cards to have an opportunity of creating new HERO cards level with a higher scarcity."
-          },
-          {
-            color: "#3772FF",
-            title: "HERO Battle ",
-            desc: "A game space will be designed for users to use their cards in battles in order to receive engaging awards."
+            title: "HERO Battle",
+            desc: "Become a legend through intense PvP arena battles! Join open tournaments for big rewards."
           }
         ]
       },

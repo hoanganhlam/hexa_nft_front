@@ -4,7 +4,7 @@
       <div class="px-6 md:px-0 container h-full flex flex-col items-center justify-center mx-auto">
         <div class="mb-12 container xs text-center">
           <h2 class="text-5xl mb-8 font-bold">
-            <span>HERO</span>
+            <span>StepHero</span>
             <br>
             <span>Tokenomics</span>
           </h2>
@@ -20,7 +20,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <h4 class="mb-2 font-bold text-xl">500M</h4>
+                <h4 class="mb-2 font-bold text-xl">100M</h4>
                 <span class="text-gray-400">Total Suply</span>
               </div>
             </div>
@@ -34,7 +34,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <h4 class="mb-2 font-bold text-xl">42.5M</h4>
+                <h4 class="mb-2 font-bold text-xl">5.25M</h4>
                 <span class="text-gray-400">Initial Circulating Supply</span>
               </div>
             </div>
@@ -61,8 +61,8 @@
         <h2 class="text-5xl mb-8">Token Distribution</h2>
         <p class="text-xl text-gray-400 mb-6">Information about the HERO token distribution.</p>
       </div>
-      <div class="px-6 md:px-0 container mx-auto md:flex md:flex-row items-center">
-        <div class="md:w-2/5 mb-8 md:md-0">
+      <div class="px-6 md:px-0 container mx-auto md:flex md:flex-row items-center justify-center">
+        <div v-if="false" class="md:w-2/5 mb-8 md:md-0">
           <ul>
             <li class="mb-3 flex space-x-2">
               <icon name="plus"></icon>
@@ -94,7 +94,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex-1 text-center">
+        <div class="md:w-1/2 text-center">
           <div class="flex justify-center mb-6">
             <client-only>
               <chart :data="distributions"/>
@@ -154,13 +154,15 @@ export default {
         {l: 'Legal and Accountancy', v: 5, c: '#45B26B'}
         ],
       distributions: [
-        {l: 'Private & Seed Sale', v: 25, c: '#FFC848'},
-        {l: 'Public sale', v: 5, c: '#9757D7'},
-        {l: 'Advisors', v: 5, c: '#45B26B'},
-        {l: 'Team', v: 15, c: '#EF466F'},
-        {l: 'Foundation', v: 10, c: '#3772fe'},
-        {l: 'Marketing & business development', v: 10, c: '#3772fe'},
-        {l: 'Liquidity tokens', v: 30, c: '#3772fe'},
+        {l: 'Reserve', v: 25, c: '#FFC848'},
+        {l: 'Seed', v: 5, c: '#9757D7'},
+        {l: 'Private', v: 5, c: '#45B26B'},
+        {l: 'Public', v: 15, c: '#EF466F'},
+        {l: 'Liquidity', v: 10, c: '#3772fe'},
+        {l: 'Marketing', v: 10, c: '#1642ac'},
+        {l: 'Game Incentives', v: 30, c: '#ac188c'},
+        {l: 'Team', v: 30, c: '#78c436'},
+        {l: 'Advisors', v: 30, c: '#56440d'},
       ],
     }
   }

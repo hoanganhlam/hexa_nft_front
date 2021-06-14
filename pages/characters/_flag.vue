@@ -91,7 +91,7 @@
           <div class="w-auto md:w-full flex justify-center">
             <div class="btn-secondary sm justify-center w-auto md:w-full" @click="redeem(data)">
               <span v-if="data.points <= earned">Redeem</span>
-              <span v-else>You need {{ data.points }} BALLs</span>
+              <span v-else>You need {{ data.points }} HEXAs</span>
             </div>
           </div>
         </div>
