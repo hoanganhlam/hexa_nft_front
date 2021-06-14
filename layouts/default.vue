@@ -33,6 +33,9 @@
             <n-link to="/battle" class="hidden md:block cursor-pointer mx-2 p-3">
               <span class="hidden md:block">Battle</span>
             </n-link>
+            <a href="https://market.stephero.io" class="hidden md:block cursor-pointer mx-2 p-3">
+              <span class="hidden md:block">Marketplace</span>
+            </a>
             <n-link to="/token" class="hidden md:block cursor-pointer mx-2 p-3">
               <span class="hidden md:block">Token</span>
             </n-link>
@@ -67,6 +70,12 @@
       <transition name="slide-up">
         <div v-show="showMenu" class="p-6 bg-gray-800 fixed top-0 left-0 right-0 font-bold">
           <h4 class="text-center mb-4 uppercase">Menu</h4>
+          <div class="mb-4">
+            <n-link to="/battle" class="btn-secondary justify-center">Battle</n-link>
+          </div>
+          <div class="mb-4">
+            <a href="https://market.stephero.io" class="btn-secondary justify-center">Marketplace</a>
+          </div>
           <div class="mb-4">
             <n-link to="/token" class="btn-secondary justify-center">Token</n-link>
           </div>
