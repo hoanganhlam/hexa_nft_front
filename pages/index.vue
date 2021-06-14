@@ -63,28 +63,27 @@
     <section id="s4" class="py-16 border-b md:border-b-0 dark:border-gray-700">
       <div class="container px-6 md:px-0 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
         <div class="mb-16 md:mb-0 text-center md:text-left">
-          <span class="text-red-600 uppercase">Genesis collections</span>
+          <span class="text-red-600 uppercase">Heroes collections</span>
           <h2 class="text-5xl font-medium mt-4 mb-8">{{ s4.title }}</h2>
           <p class="text-gray-300 mb-12">{{ s4.desc }}</p>
-          <n-link to="/characters/genesis" class="btn-primary">Genesis Collection</n-link>
+          <n-link to="/characters/genesis" class="btn-primary">Heroes Collection</n-link>
         </div>
         <div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             <div class="cursor-pointer">
               <video muted loop autoplay playsinline :id="`video_0`" class="rounded-tl rounded-tr">
-                <source src="/genesis.mp4">
+                <source src="https://ipfs.io/ipfs/QmbnsmucLYq8c2oXE3PBKiNdYbYT7PS8YNeMQ3iVnrVapY">
               </video>
               <div class="p-4 flex justify-center">
-                <n-link to="/characters/genesis" class="btn-secondary sm">Genesis</n-link>
+                <n-link to="/characters/genesis" class="btn-secondary sm">Heroes</n-link>
               </div>
             </div>
             <div class="cursor-pointer">
-              <video muted loop autoplay playsinline :id="`video_1`" class="rounded-tl rounded-tr"
-                     @mouseover="videoHover(1, true)" @mouseleave="videoHover(1, false)">
-                <source src="/genesis_lp.mp4">
+              <video muted loop autoplay playsinline :id="`video_1`" class="rounded-tl rounded-tr">
+                <source src="https://ipfs.io/ipfs/QmaqMWBpgPQ5a7Z2sWTkbfjn3oTV2RwVS85rM6QJoyrvY2">
               </video>
               <div class="p-4 flex justify-center">
-                <n-link to="/characters/lp_genesis" class="btn-secondary sm">Genesis LP</n-link>
+                <n-link to="/characters/lp_genesis" class="btn-secondary sm">Heroes LP</n-link>
               </div>
             </div>
           </div>

@@ -5,7 +5,7 @@
         <div class="flex items-center justify-between container mx-auto font-bold">
           <div class="flex items-center -mx-2">
             <div class="mx-2 p-3 items-center flex space-x-4">
-              <h1 class="-mt-2 cursor-pointer text-lg font-bold">
+              <h1 class="cursor-pointer text-lg font-bold">
                 <n-link to="/">
                   <img class="h-12" src="/logo.png" alt="Gokumoon">
                 </n-link>
@@ -40,10 +40,10 @@
               <span class="hidden md:block">Token</span>
             </n-link>
             <n-link to="/characters/genesis" class="hidden md:block cursor-pointer mx-2 p-3">
-              <span class="hidden md:block">Genesis</span>
+              <span class="hidden md:block">Heroes</span>
             </n-link>
             <n-link to="/characters/lp_genesis" class="hidden md:block cursor-pointer mx-2 p-3">
-              <span class="hidden md:block">Genesis LP</span>
+              <span class="hidden md:block">Heroes LP</span>
             </n-link>
             <n-link v-if="false" to="/collection" class="hidden md:block cursor-pointer mx-2 p-3">
               <span class="hidden md:block">My Collection</span>

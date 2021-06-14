@@ -4,7 +4,7 @@
       <div>
         <span class="font-bold mb-2" style="color: #F36237">CRYPTO HERO</span>
         <div class="flex justify-between mb-6 items-center">
-          <h2 class="text-6xl font-medium">Genesis {{ $route.params.flag === 'lp_genesis' ? 'LP' : '' }}</h2>
+          <h2 class="text-6xl font-medium">Heroes {{ $route.params.flag === 'lp_genesis' ? 'LP' : '' }}</h2>
         </div>
         <p class="text-gray-300 mb-10">Collectibles of HERO cards with the uniqueness of each character.</p>
         <client-only>
