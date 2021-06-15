@@ -107,7 +107,7 @@
     <footer class="dark:text-white dark:bg-gray-900">
       <div class="p-6 flex justify-center text-center">
         <div>
-          <img class="md:mb-4 h-28 mx-auto object-contain" src="/logo.png" alt="Gokumoon">
+          <img class="md:mb-4 h-16 mx-auto object-contain" src="/logo.png" alt="Gokumoon">
         </div>
       </div>
       <div class="py-6 justify-center flex" v-if="false">

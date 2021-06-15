@@ -154,15 +154,15 @@ export default {
         {l: 'Legal and Accountancy', v: 5, c: '#45B26B'}
         ],
       distributions: [
-        {l: 'Reserve', v: 25, c: '#FFC848'},
+        {l: 'Foundation Reserve', v: 10, c: '#FFC848'},
         {l: 'Seed', v: 5, c: '#9757D7'},
-        {l: 'Private', v: 5, c: '#45B26B'},
-        {l: 'Public', v: 15, c: '#EF466F'},
-        {l: 'Liquidity', v: 10, c: '#3772fe'},
-        {l: 'Marketing', v: 10, c: '#1642ac'},
-        {l: 'Game Incentives', v: 30, c: '#ac188c'},
-        {l: 'Team', v: 30, c: '#78c436'},
-        {l: 'Advisors', v: 30, c: '#56440d'},
+        {l: 'Private', v: 15, c: '#45B26B'},
+        {l: 'Public', v: 2.5, c: '#EF466F'},
+        {l: 'Liquidity', v: 20, c: '#3772fe'},
+        {l: 'Marketing', v: 15, c: '#1642ac'},
+        {l: 'Game Incentives', v: 17.5, c: '#ac188c'},
+        {l: 'Team', v: 10, c: '#78c436'},
+        {l: 'Advisors', v: 5, c: '#56440d'},
       ],
     }
   }
