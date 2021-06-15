@@ -1,12 +1,12 @@
 <template>
   <div>
-    <section id="s1" class="h-screen pt-12 bg-gray-50 dark:bg-gray-900 relative">
+    <section id="s1" class="h-screen bg-gray-50 dark:bg-gray-900 relative">
       <div class="container px-6 md:px-0 flex flex-col mx-auto">
-        <div class="flex-1 flex md:-mx-4 items-center">
-          <div class="px-4 md:w-1/2">
-            <h1 class="mb-8 font-bold text-6xl">{{ s1.title }}</h1>
-            <p class="mb-12">More than a game, Step Hero also has features of a social network with a strong community, helping players on investment to earn money from game.</p>
-            <div class="flex flex-col md:flex-row -mx-2">
+        <div class="flex-1 flex md:-mx-4 items-end justify-center">
+          <div class="px-4 py-6">
+            <h1 class="mb-8 hidden font-bold text-6xl">{{ s1.title }}</h1>
+            <p class="mb-12 hidden">More than a game, Step Hero also has features of a social network with a strong community, helping players on investment to earn money from game.</p>
+            <div class="flex flex-col justify-center md:flex-row -mx-2">
               <div class="mx-2">
                 <a href="#about" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">About us</a>
               </div>
@@ -43,9 +43,7 @@
         <div class="container mx-auto xs text-center mb-24">
           <span class="text-red-600 uppercase">Project</span>
           <h2 class="text-5xl mt-4 mb-8 font-medium">{{ s3.title }}</h2>
-          <p class="text-gray-300">HERO Card is a collection of animated digital characters with varying scarcities.
-            Each HERO Card is backed by a truly unique NFT and can be unpacked with <b class="text-white">Ball
-              Points</b>.</p>
+          <p class="text-gray-300">More than a game, Step Hero also has features of a social network with a strong community, helping players on investment to earn money from game.</p>
         </div>
         <div class="flex flex-wrap -mx-4">
           <div v-for="(item, i) in s3.arr" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
@@ -138,25 +136,25 @@
       <div class="container px-6 md:px-0 mx-auto">
         <h4 class="text-red-600 uppercase text-center mb-8">About us</h4>
         <div class="mb-20">
-          <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4 mb-8">Our team</h2>
+          <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4 mb-16">Our team</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div v-for="(item, i) in s7.teams" :key="i">
-              <div class="flex flex-col p-6 h-full" style="background: #23262F;">
+            <div v-for="(item, i) in s7.teams" :key="i" class="relative">
+              <img src="/about-bg.png" alt="">
+              <div class="absolute -top-8 left-0 right-0 bottom-0 flex flex-col py-2 px-12 h-full">
                 <div class="flex justify-center">
-                  <div class="w-3/5">
-                    <div class="rounded-1by1 mb-4">
-                      <img class="object-contain" :src="`/assets/Team/${item.name}.png`" alt="">
+                  <div class="w-1/4">
+                    <div class="rounded-1by1">
+                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.png`" alt="">
                     </div>
                     <a v-if="item.link" :href="item.link" target="_blank">
-                      <icon class="md" name="linkedin"></icon>
+                      <icon name="linkedin"></icon>
                     </a>
                   </div>
                 </div>
-                <div class="mt-2">
-                  <h3 class="mb-2 font-bold text-lg">{{ item.name }}</h3>
-                  <hr class="mb-2 border-gray-700">
-                  <h4 class="mb-2">{{ item.title }}</h4>
-                  <div class="text-gray-400 text-sm" v-html="item.bio"></div>
+                <div>
+                  <h3 class="text-gray-800 font-bold text-lg">{{ item.name }}</h3>
+                  <h4 class="text-gray-700 text-sm mb-2">{{ item.title }}</h4>
+                  <div class="text-gray-600 text-xs" v-html="item.bio"></div>
                 </div>
               </div>
             </div>
@@ -167,20 +165,23 @@
             <div class="px-4 mb-4 md:mb-8 md:w-2/3 flex flex-col">
               <h2 class="text-3xl md:text-5xl mb-4 font-medium mt-4 mb-8">Advisor</h2>
               <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div v-for="(item, i) in s7.advisors" :key="i">
-                  <div class="flex flex-col p-6 h-full" style="background: #23262F;">
+                <div v-for="(item, i) in s7.advisors" :key="i" class="relative">
+                  <img src="/about-bg.png" alt="">
+                  <div class="absolute -top-8 left-0 right-0 bottom-0 flex flex-col py-2 px-12 h-full">
                     <div class="flex justify-center">
-                      <div class="w-3/5">
+                      <div class="w-1/4">
                         <div class="rounded-1by1">
-                          <img class="object-contain" :src="`/assets/Team/${item.name}.png`" alt="">
+                          <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.png`" alt="">
                         </div>
+                        <a v-if="item.link" :href="item.link" target="_blank">
+                          <icon name="linkedin"></icon>
+                        </a>
                       </div>
                     </div>
-                    <div class="mt-2">
-                      <h3 class="mb-2 font-bold text-lg">{{ item.name }}</h3>
-                      <hr class="mb-2 border-gray-700">
-                      <h4 class="mb-2">{{ item.title }}</h4>
-                      <div class="text-gray-400 text-sm" v-html="item.bio"></div>
+                    <div>
+                      <h3 class="text-gray-800 font-bold text-lg">{{ item.name }}</h3>
+                      <h4 class="text-gray-700 text-sm mb-2">{{ item.title }}</h4>
+                      <div class="text-gray-600 text-xs" v-html="item.bio"></div>
                     </div>
                   </div>
                 </div>
@@ -205,7 +206,7 @@ export default {
         title: "Fantasy-themed RPG Game",
       },
       s3: {
-        title: "HERO farming for NFTs",
+        title: "Fantasy-themed RPG Game",
         arr: [
           {
             img: 'red',
@@ -361,8 +362,8 @@ export default {
 
 <style>
 #s1 {
-  background-image: url("/bg-mobile.jpg");
-  background-size: 135%;
+  background-image: url("/bg.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -375,7 +376,7 @@ export default {
 }
 
 #s1 .container {
-  min-height: 100vh;
+  min-height: calc(100vh - 56px);
 }
 
 details .content {
