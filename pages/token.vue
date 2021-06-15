@@ -48,7 +48,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <h4 class="mb-2 font-bold text-xl">$0.02</h4>
+                <h4 class="mb-2 font-bold text-xl">$0.1</h4>
                 <span class="text-gray-400">Pancakeswap Listing Price</span>
               </div>
             </div>

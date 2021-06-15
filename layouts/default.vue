@@ -105,9 +105,9 @@
       <Nuxt/>
     </main>
     <footer class="dark:text-white dark:bg-gray-900">
-      <div class="py-6 flex justify-center text-center">
+      <div class="p-6 flex justify-center text-center">
         <div>
-          <img class="mb-4 h-28 mx-auto" src="/logo.png" alt="Gokumoon">
+          <img class="md:mb-4 h-28 mx-auto object-contain" src="/logo.png" alt="Gokumoon">
         </div>
       </div>
       <div class="py-6 justify-center flex" v-if="false">
@@ -353,12 +353,12 @@ header.sticking .notify {
 }
 
 .btn-primary {
-  @apply rounded-full text-white p-6 py-4 cursor-pointer inline-flex space-x-2;
+  @apply rounded-full text-white p-3 py-2 md:p-6 md:py-3.5 cursor-pointer inline-flex space-x-2;
   background: #F36237;
 }
 
 .btn-secondary {
-  @apply border-2 rounded-full p-6 py-3.5 cursor-pointer flex space-x-2;
+  @apply border-2 rounded-full p-3 py-2 md:p-6 md:py-3.5 cursor-pointer flex space-x-2;
 }
 
 .btn-secondary.sm {

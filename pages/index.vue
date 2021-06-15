@@ -1,8 +1,8 @@
 <template>
   <div>
     <section id="s1" class="h-screen bg-gray-50 dark:bg-gray-900 relative">
-      <div class="container px-6 md:px-0 flex flex-col mx-auto">
-        <div class="flex-1 flex md:-mx-4 items-end justify-center">
+      <div class="container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
+        <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
           <div class="px-4 py-6">
             <h1 class="mb-8 hidden font-bold text-6xl">{{ s1.title }}</h1>
             <p class="mb-12 hidden">More than a game, Step Hero also has features of a social network with a strong community, helping players on investment to earn money from game.</p>
@@ -48,7 +48,7 @@
         <div class="flex flex-wrap -mx-4">
           <div v-for="(item, i) in s3.arr" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
             <img :src="`/assets/s1/${item.img}.png`" alt="">
-            <div class="absolute top-0 left-0 right-0 bottom-0 p-20 md:p-16 px-32 md:px-28 rounded h-full">
+            <div class="absolute top-0 left-0 right-0 bottom-0 p-16 px-24 md:p-16 md:px-28 rounded h-full">
               <div v-if="false" class="w-10 mb-4">
                 <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" alt="">
               </div>
@@ -121,7 +121,7 @@
         <div class="flex flex-wrap -mx-4">
           <div v-for="(item, i) in s6.arr" :key="i" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
             <img :src="`/assets/s1/${item.img}.png`" alt="">
-            <div class="absolute top-0 left-0 right-0 bottom-0 p-20 md:p-16 px-32 md:px-28 rounded h-full">
+            <div class="absolute top-0 left-0 right-0 bottom-0  p-16 px-24 md:p-16 md:px-28 rounded h-full">
               <div v-if="false" class="w-10 mb-4">
                 <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" alt="">
               </div>
@@ -362,7 +362,7 @@ export default {
 
 <style>
 #s1 {
-  background-image: url("/bg.jpg");
+  background-image: url("/bg-mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
