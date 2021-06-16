@@ -274,18 +274,18 @@ export default {
       },
       s7: {
         teams: [
-          {
-            name: "Goku Nguyen",
-            title: "Chief Executive Officer",
-            bio: "<b>Power: strategic & management</b>\n" +
-              "<p>- 10 years of experience in Technology and Business</p>\n" +
-              "<p>- CEO at Luzo Technologies Vietnam and VidGo</p>\n" +
-              "<p>- Technical Specialist at Microsoft Vietnam Philanthropies</p>",
-            link: "https://www.linkedin.com/in/duvannguyen/"
-          },
+          // {
+          //   name: "Goku Nguyen",
+          //   title: "Chief Executive Officer",
+          //   bio: "<b>Power: strategic & management</b>\n" +
+          //     "<p>- 10 years of experience in Technology and Business</p>\n" +
+          //     "<p>- CEO at Luzo Technologies Vietnam and VidGo</p>\n" +
+          //     "<p>- Technical Specialist at Microsoft Vietnam Philanthropies</p>",
+          //   link: "https://www.linkedin.com/in/duvannguyen/"
+          // },
           {
             name: "Gohan Vu",
-            title: "Chief Operating Officer",
+            title: "Chief Executive Officer",
             bio: "<b>Power: operation & cost optimization </b>\n" +
               "<p>- 10 years of experience in e-commerce industry</p>\n" +
               "<p>- Founder & CEO at Ligovi Ecom, CMO at Phat Media</p>\n" +
@@ -309,22 +309,22 @@ export default {
               "<p>- Awarded 1st prize of MSP Vietnam’s hackathon 2016 & 2nd prize of Vietnam National Imagine Cup 2015</p>\n" +
               "<p>- PhD candiate in Cryptocurrency & Blockchain, France</p>"
           },
-          {
-            name: "Vegeta Nguyen",
-            title: "Chief Product Officer",
-            bio: "<b>Power: product RnD & critical thinking</b>\n" +
-              "<p>- 6 years of experience in core banking consulting, data warehouse and switching system implementation</p>\n" +
-              "<p>- 5 years of experience in digital marketing, blockchain ecosystem research and advertising on mutil-channel</p>\n" +
-              "<p>- Founder & Chief Business Officer (CBO) at OMIS Media</p>"
-          },
-          {
-            name: "Krillin Tao",
-            title: "Art & Game Director",
-            bio: "<b>Power: art design & game programming</b>\n" +
-              "<p>- 15 years of communication art and game design</p>\n" +
-              "<p>- Developed \"Animation coloring app for kids\" at Bluebird Award 2016</p>\n" +
-              "<p>- Awarded \"Best game idea\" of Gamejam Award 2012 FPT Arena Hanoi</p>"
-          }
+          // {
+          //   name: "Vegeta Nguyen",
+          //   title: "Chief Product Officer",
+          //   bio: "<b>Power: product RnD & critical thinking</b>\n" +
+          //     "<p>- 6 years of experience in core banking consulting, data warehouse and switching system implementation</p>\n" +
+          //     "<p>- 5 years of experience in digital marketing, blockchain ecosystem research and advertising on mutil-channel</p>\n" +
+          //     "<p>- Founder & Chief Business Officer (CBO) at OMIS Media</p>"
+          // },
+          // {
+          //   name: "Krillin Tao",
+          //   title: "Art & Game Director",
+          //   bio: "<b>Power: art design & game programming</b>\n" +
+          //     "<p>- 15 years of communication art and game design</p>\n" +
+          //     "<p>- Developed \"Animation coloring app for kids\" at Bluebird Award 2016</p>\n" +
+          //     "<p>- Awarded \"Best game idea\" of Gamejam Award 2012 FPT Arena Hanoi</p>"
+          // }
         ],
         advisors: [
           {
