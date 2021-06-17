@@ -2,11 +2,11 @@
   <div>
     <section id="s1" class="h-screen bg-gray-50 dark:bg-gray-900 relative">
       <div class="container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
-        <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
-          <div class="px-4 py-6">
-            <h1 class="mb-8 hidden font-bold text-6xl">{{ s1.title }}</h1>
-            <p class="mb-12 hidden">More than a game, Step Hero also has features of a social network with a strong community, helping players on investment to earn money from game.</p>
-            <div class="flex flex-col justify-center md:flex-row -mx-2">
+        <div class="flex-1 flex md:-mx-4 md:items-center justify-start">
+          <div class="px-4 md:w-1/2 py-12 md:py-6">
+            <h1 class="mb-4 font-bold text-6xl">{{ s1.title }}</h1>
+            <p class="mb-12 text-xl">The first NFT Fantasy-Themed RPG Game on Polygon (Previous Matic Network)</p>
+            <div v-if="false" class="flex flex-col justify-center md:flex-row -mx-2">
               <div class="mx-2">
                 <a href="#about" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">About us</a>
               </div>
@@ -48,12 +48,12 @@
         <div class="flex flex-wrap -mx-4">
           <div v-for="(item, i) in s3.arr" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
             <img :src="`/assets/s1/${item.img}.png`" alt="">
-            <div class="absolute top-0 left-0 right-0 bottom-0 p-16 px-24 md:p-16 md:px-28 rounded h-full">
+            <div class="absolute top-0 left-0 right-0 bottom-0 p-16 px-24 md:p-16 md:px-24 rounded h-full">
               <div v-if="false" class="w-10 mb-4">
                 <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" alt="">
               </div>
-              <h4 class="font-medium">{{ item.title }}</h4>
-              <p class="text-sm text-gray-300">{{ item.desc }}</p>
+              <h4 class="font-bold text-black text-xl mb-2">{{ item.title }}</h4>
+              <p class="text-sm text-black">{{ item.desc }}</p>
             </div>
           </div>
         </div>
@@ -120,8 +120,8 @@
         </div>
         <div class="flex flex-wrap -mx-4">
           <div v-for="(item, i) in s6.arr" :key="i" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
-            <img :src="`/assets/s1/${item.img}.png`" alt="">
-            <div class="absolute top-0 left-0 right-0 bottom-0  p-16 px-24 md:p-16 md:px-28 rounded h-full">
+            <img :src="`/assets/s2/${item.img}.png`" alt="">
+            <div class="absolute top-0 left-0 right-0 bottom-0 p-32 px-28 md:p-28 md:px-28 rounded h-full">
               <div v-if="false" class="w-10 mb-4">
                 <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" alt="">
               </div>
@@ -368,9 +368,21 @@ export default {
   background-position: center;
 }
 
+#s3-1 {
+  background-image: url("/assets/s3.1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (min-width: 768px) {
   #s1 {
-    background-image: url("/bg.jpg");
+    background-image: url("/banner.jpeg");
+    background-size: cover;
+  }
+
+  #s3-1 {
+    background-image: url("/assets/s3.1.jpeg");
     background-size: cover;
   }
 }

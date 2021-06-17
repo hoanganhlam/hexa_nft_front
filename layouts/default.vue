@@ -4,10 +4,10 @@
       <nav ref="nav-main" class="nav-main">
         <div class="flex items-center justify-between container mx-auto font-bold">
           <div class="flex items-center -mx-2">
-            <div class="mx-2 p-1 items-center flex space-x-4">
+            <div class="mx-2 p-2 items-center flex space-x-4">
               <h1 class="cursor-pointer text-lg font-bold">
                 <n-link to="/">
-                  <img class="h-12" src="/logo.png" alt="Gokumoon">
+                  <img class="h-8 md:h-10" src="/logo.png" alt="Gokumoon">
                 </n-link>
               </h1>
               <div class="dropdown relative" :class="{'active': activeDrop}" v-click-outside="closeDrop">
