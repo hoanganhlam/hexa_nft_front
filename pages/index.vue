@@ -1,10 +1,11 @@
 <template>
   <div>
-    <section id="s1" class="h-screen bg-gray-50 dark:bg-gray-900 relative">
-      <div class="container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
+    <section id="s1" class="h-full md:h-auto bg-gray-50 dark:bg-gray-900 relative">
+      <img class="hidden md:block w-full" src="/banner-top-text.jpg" alt="">
+      <div class="md:hidden container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
           <div class="px-4 py-12 md:py-6 md:text-center">
-            <h1 class="md:hidden mb-4 font-bold text-6xl">{{ s1.title }}</h1>
+            <h1 class="md:hidden mb-4 font-bold text-4xl">{{ s1.title }}</h1>
             <p class="mb-12 text-2xl">The first NFT Fantasy-Themed RPG Game on Polygon (Previous Matic Network)</p>
             <div v-if="false" class="flex flex-col justify-center md:flex-row -mx-2">
               <div class="mx-2">
@@ -401,7 +402,7 @@ export default {
 <style>
 #s1 {
   background-image: url("/bg-mobile.jpeg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -409,6 +410,7 @@ export default {
   #s1 {
     background-image: url("/bg.jpg");
     background-size: cover;
+    margin-top: 3.5rem;
   }
 }
 
