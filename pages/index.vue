@@ -2,10 +2,10 @@
   <div>
     <section id="s1" class="h-screen bg-gray-50 dark:bg-gray-900 relative">
       <div class="container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
-        <div class="flex-1 flex md:-mx-4 md:items-center justify-start">
-          <div class="px-4 md:w-1/2 py-12 md:py-6">
-            <h1 class="mb-4 font-bold text-6xl">{{ s1.title }}</h1>
-            <p class="mb-12 text-xl">The first NFT Fantasy-Themed RPG Game on Polygon (Previous Matic Network)</p>
+        <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
+          <div class="px-4 py-12 md:py-6 md:text-center">
+            <h1 class="md:hidden mb-4 font-bold text-6xl">{{ s1.title }}</h1>
+            <p class="mb-12 text-2xl">The first NFT Fantasy-Themed RPG Game on Polygon (Previous Matic Network)</p>
             <div v-if="false" class="flex flex-col justify-center md:flex-row -mx-2">
               <div class="mx-2">
                 <a href="#about" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">About us</a>
@@ -73,7 +73,7 @@
                 Plot of Step Hero is based on the scene of a world destroyed by the legion of demon lord Lucifer. Players will take the role of heroes in different eras accompanying archangel Gabriel to fight against the army of shadow.
               </p>
               <p class="mb-6 text-gray-300">The player's mission is to fight, collect in-game items and money (Hexa coin), craft weapons to buff energy, then continue to fight. The power level of the shadow legion will become stronger and stronger.</p>
-              <a href="#about" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">Battle</a>
+              <n-link to="/battle" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">Battle</n-link>
             </div>
           </div>
         </div>
@@ -276,7 +276,7 @@ export default {
             img: null,
             active: false,
             title: "Can I buy and sell HERO Cards on NFTs market place?",
-            desc: "HERO cards are limited and digitally scarce as they are created based on Non‑fungible tokens (NFTs). These special tokens are used on Binance Smart Chain to generate verifiable digital scarcity. You could sell HERO Cards on NFTs market place once they reach a certain value which you expect."
+            desc: "HERO cards are limited and digitally scarce as they are created based on Non‑fungible tokens (NFTs). These special tokens are used on Polygon to generate verifiable digital scarcity. You could sell HERO Cards on NFTs market place once they reach a certain value which you expect."
           },
           {
             img: null,
@@ -322,7 +322,7 @@ export default {
           //   link: "https://www.linkedin.com/in/duvannguyen/"
           // },
           {
-            name: "Gohan Vu",
+            name: "Garbriel Vu",
             title: "Chief Executive Officer",
             bio: "<b>Power: operation & cost optimization </b>\n" +
               "<p>- 10 years of experience in e-commerce industry</p>\n" +
@@ -331,7 +331,7 @@ export default {
             link:"https://www.linkedin.com/in/huu-vu-quoc-766405213/"
           },
           {
-            name: "Videl Nguyen",
+            name: "Lilly Nguyen",
             title: "Chief Marketing Officer",
             bio: "<b>Power: creative & growth hacking</b>\n" +
               "<p>- Master of International Marketing Management in the UK with 6 years of experience in Marketing and Business Development</p>\n" +
@@ -340,7 +340,7 @@ export default {
             link: "https://www.linkedin.com/in/nhatnguyen246/"
           },
           {
-            name: "Yamcha Nguyen",
+            name: "Lucifer Nguyen",
             title: "Chief Technology Officer",
             bio: "<b>Power: software design & full-stack development</b>\n" +
               "<p>- Founder at sPhoton Technology and Deverion</p>\n" +
@@ -407,7 +407,7 @@ export default {
 }
 @media (min-width: 768px) {
   #s1 {
-    background-image: url("/banner.jpeg");
+    background-image: url("/bg.jpg");
     background-size: cover;
   }
 }

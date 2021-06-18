@@ -50,9 +50,9 @@
             <n-link to="/token" class="hidden md:block cursor-pointer mx-2 p-3">
               <span class="hidden md:block">Token</span>
             </n-link>
-            <n-link to="/characters/lp_genesis" class="hidden md:block cursor-pointer mx-2 p-3">
+            <a href="https://whitepaper.stephero.io/" class="hidden md:block cursor-pointer mx-2 p-3">
               <span class="hidden md:block">Whitepaper</span>
-            </n-link>
+            </a>
             <a v-if="false" href="https://whitepaper.stephero.io/" class="hidden md:block cursor-pointer mx-2 p-3">
               <span class="hidden md:block">My Collection</span>
             </a>
@@ -92,6 +92,9 @@
           </div>
           <div class="mb-4">
             <n-link to="/token" class="btn-secondary justify-center">Token</n-link>
+          </div>
+          <div class="mb-4">
+            <a href="https://whitepaper.stephero.io/" class="btn-secondary justify-center">Whitepaper</a>
           </div>
           <div v-if="false" class="mb-4">
             <n-link to="/collection" class="btn-secondary justify-center">My Collection</n-link>
