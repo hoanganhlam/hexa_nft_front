@@ -206,7 +206,7 @@ export default {
         title: "Fantasy-themed RPG Game",
       },
       s3: {
-        title: "Fantasy-themed RPG Game",
+        title: "Stephero Ecosystem",
         arr: [
           {
             img: 'red',

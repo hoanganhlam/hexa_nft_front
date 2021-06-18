@@ -36,18 +36,26 @@
             <a href="https://market.stephero.io" class="hidden md:block cursor-pointer mx-2 p-3">
               <span class="hidden md:block">Marketplace</span>
             </a>
+            <dropdown hoverable class="hidden md:block mx-2 p-3">
+              <a href="">Collection</a>
+              <div class="drop-body" slot="body">
+                <n-link to="/characters/genesis" class="hidden md:block cursor-pointer mx-2 p-3">
+                  <span class="hidden md:block">Heroes</span>
+                </n-link>
+                <n-link to="/characters/lp_genesis" class="hidden md:block cursor-pointer mx-2 p-3">
+                  <span class="hidden md:block">Heroes LP</span>
+                </n-link>
+              </div>
+            </dropdown>
             <n-link to="/token" class="hidden md:block cursor-pointer mx-2 p-3">
               <span class="hidden md:block">Token</span>
             </n-link>
-            <n-link to="/characters/genesis" class="hidden md:block cursor-pointer mx-2 p-3">
-              <span class="hidden md:block">Heroes</span>
-            </n-link>
             <n-link to="/characters/lp_genesis" class="hidden md:block cursor-pointer mx-2 p-3">
-              <span class="hidden md:block">Heroes LP</span>
+              <span class="hidden md:block">Whitepaper</span>
             </n-link>
-            <n-link v-if="false" to="/collection" class="hidden md:block cursor-pointer mx-2 p-3">
+            <a v-if="false" href="https://whitepaper.stephero.io/" class="hidden md:block cursor-pointer mx-2 p-3">
               <span class="hidden md:block">My Collection</span>
-            </n-link>
+            </a>
           </div>
           <div class="flex items-center">
             <div class="md:mx-2 py-3 md:px-3 flex space-x-1 text-gray-400">
@@ -77,15 +85,15 @@
             <a href="https://market.stephero.io" class="btn-secondary justify-center">Marketplace</a>
           </div>
           <div class="mb-4">
-            <n-link to="/token" class="btn-secondary justify-center">Token</n-link>
-          </div>
-          <div class="mb-4">
             <n-link to="/characters/genesis" class="btn-secondary justify-center">Genesis</n-link>
           </div>
           <div class="mb-4">
             <n-link to="/characters/lp_genesis" class="btn-secondary justify-center">Genesis LP</n-link>
           </div>
           <div class="mb-4">
+            <n-link to="/token" class="btn-secondary justify-center">Token</n-link>
+          </div>
+          <div v-if="false" class="mb-4">
             <n-link to="/collection" class="btn-secondary justify-center">My Collection</n-link>
           </div>
           <div class="mb-4">
@@ -148,9 +156,10 @@
 <script>
 import SVGIcon from "~/components/Icon.vue";
 import ConnectWallet from "@/components/ConnectWallet.vue";
+import Dropdown from "@/components/Dropdown";
 
 export default {
-  components: {ConnectWallet, icon: SVGIcon},
+  components: {Dropdown, ConnectWallet, icon: SVGIcon},
   data() {
     return {
       showMenu: false,
