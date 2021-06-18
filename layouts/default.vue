@@ -273,6 +273,7 @@ header.sticking .notify {
 
 #site-main {
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .dark svg {

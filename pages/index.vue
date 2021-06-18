@@ -59,14 +59,46 @@
         </div>
       </div>
     </section>
+    <section id="s3-2" class="dark:bg-gray-800 relative">
+      <div class="md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
+        <div class="flex-1 flex flex-col md:flex-row md:-mx-4 md:items-center justify-start">
+          <div class="md:w-1/2">
+            <img src="/game.png" alt="">
+          </div>
+          <div class="md:w-1/2">
+            <div class="lg:w-2/3 p-4 md:p-16">
+              <span class="text-red-600 uppercase">Gameplay</span>
+              <h2 class="text-5xl font-medium mt-4 mb-6">Heroes save a world destroyed</h2>
+              <p class="my-4 text-gray-300">
+                Plot of Step Hero is based on the scene of a world destroyed by the legion of demon lord Lucifer. Players will take the role of heroes in different eras accompanying archangel Gabriel to fight against the army of shadow.
+              </p>
+              <p class="mb-6 text-gray-300">The player's mission is to fight, collect in-game items and money (Hexa coin), craft weapons to buff energy, then continue to fight. The power level of the shadow legion will become stronger and stronger.</p>
+              <a href="#about" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">Battle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="s3-1" class="dark:bg-gray-900 relative">
+      <div class="container p-4 md:pt-20 px-6 md:px-0 flex flex-col mx-auto">
+        <div class="flex-1 flex flex-col md:flex-row md:-mx-4 md:items-center justify-start">
+          <div class="md:w-1/2">
+            <div class="p-4 md:p-6">
+              <span class="text-red-600 uppercase">Marketplace</span>
+              <h2 class="text-5xl font-medium mt-4 mb-6">Multi-Chain based NFTs platform</h2>
+              <p class="my-8 text-lg text-gray-300">
+                Hero NFTs Marketplace is a Multi-Chain based NFTs platform where users can create, sell, and buy NFTs digital content easily              </p>
+              <a href="https://market.stephero.io/" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">Visit</a>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <img src="/mkt.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="s4" class="py-16 border-b md:border-b-0 dark:border-gray-700">
       <div class="container px-6 md:px-0 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-        <div class="mb-16 md:mb-0 text-center md:text-left">
-          <span class="text-red-600 uppercase">Heroes collections</span>
-          <h2 class="text-5xl font-medium mt-4 mb-8">{{ s4.title }}</h2>
-          <p class="text-gray-300 mb-12">{{ s4.desc }}</p>
-          <n-link to="/characters/genesis" class="btn-primary">Heroes Collection</n-link>
-        </div>
         <div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             <div class="cursor-pointer">
@@ -87,9 +119,15 @@
             </div>
           </div>
         </div>
+        <div class="mb-16 md:mb-0 text-center md:text-left">
+          <span class="text-red-600 uppercase">Heroes collections</span>
+          <h2 class="text-5xl font-medium mt-4 mb-6">{{ s4.title }}</h2>
+          <p class="text-gray-300 mb-8">{{ s4.desc }}</p>
+          <n-link to="/characters/genesis" class="btn-primary">Heroes Collection</n-link>
+        </div>
       </div>
     </section>
-    <section id="s5" class="py-16 border-b md:border-b-0 dark:border-gray-700">
+    <section id="s5" class="dark:bg-gray-800 py-16 border-b md:border-b-0 dark:border-gray-700">
       <div class="container sm px-6 md:px-0 mx-auto">
         <div class="container text-center xs mx-auto">
           <h2 class="text-3xl md:text-5xl font-medium mt-4 mb-8">{{ s5.title }}</h2>
@@ -362,27 +400,14 @@ export default {
 
 <style>
 #s1 {
-  background-image: url("/bg-mobile.jpg");
+  background-image: url("/bg-mobile.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-
-#s3-1 {
-  background-image: url("/assets/s3.1.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 @media (min-width: 768px) {
   #s1 {
     background-image: url("/banner.jpeg");
-    background-size: cover;
-  }
-
-  #s3-1 {
-    background-image: url("/assets/s3.1.jpeg");
     background-size: cover;
   }
 }
