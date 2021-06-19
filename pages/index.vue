@@ -401,7 +401,7 @@ export default {
 
 <style>
 #s1 {
-  background-image: url("/bg-mobile.jpg");
+  background-image: url("/bg_mobile.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
