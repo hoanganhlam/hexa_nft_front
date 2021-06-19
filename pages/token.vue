@@ -44,12 +44,12 @@
               <div class="mb-4">
                 <div class="mx-auto p-4 flex justify-center items-center rounded-full w-24 h-24 lg"
                      :style="{background: 'rgb(68 178 107)'}">
-                  <img src="/assets/Icons/Icon/Pancakeswap.png" alt="">
+                  <img src="/assets/Icons/Icon/QuickSwap.png" alt="">
                 </div>
               </div>
               <div class="text-center">
                 <h4 class="mb-2 font-bold text-xl">$0.1</h4>
-                <span class="text-gray-400">Pancakeswap Listing Price</span>
+                <span class="text-gray-400">Quickswap Listing Price</span>
               </div>
             </div>
           </div>

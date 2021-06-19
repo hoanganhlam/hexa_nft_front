@@ -100,6 +100,12 @@
     </section>
     <section id="s4" class="py-16 border-b md:border-b-0 dark:border-gray-700">
       <div class="container px-6 md:px-0 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+        <div class="mb-16 md:mb-0 text-center md:text-left">
+          <span class="text-red-600 uppercase">Heroes collections</span>
+          <h2 class="text-5xl font-medium mt-4 mb-6">{{ s4.title }}</h2>
+          <p class="text-gray-300 mb-8">{{ s4.desc }}</p>
+          <n-link to="/characters/genesis" class="btn-primary">Heroes Collection</n-link>
+        </div>
         <div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             <div class="cursor-pointer">
@@ -119,12 +125,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="mb-16 md:mb-0 text-center md:text-left">
-          <span class="text-red-600 uppercase">Heroes collections</span>
-          <h2 class="text-5xl font-medium mt-4 mb-6">{{ s4.title }}</h2>
-          <p class="text-gray-300 mb-8">{{ s4.desc }}</p>
-          <n-link to="/characters/genesis" class="btn-primary">Heroes Collection</n-link>
         </div>
       </div>
     </section>
@@ -401,7 +401,7 @@ export default {
 
 <style>
 #s1 {
-  background-image: url("/bg-mobile.jpeg");
+  background-image: url("/bg-mobile.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
