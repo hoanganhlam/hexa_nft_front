@@ -16,7 +16,7 @@
               <div class="mb-4">
                 <div class="mx-auto p-4 flex justify-center items-center rounded-full w-24 h-24 lg"
                      :style="{background: '#3772FF'}">
-                  <img src="/assets/Icons/Icon/Box.svg" alt="">
+                  <img src="/assets/Icons/Icon/Box.svg" alt="Total Suply">
                 </div>
               </div>
               <div class="text-center">
@@ -30,7 +30,7 @@
               <div class="mb-4">
                 <div class="mx-auto p-4 flex justify-center items-center rounded-full w-24 h-24 lg"
                      :style="{background: '#EF466F'}">
-                  <img src="/assets/Icons/Icon/Money.svg" alt="">
+                  <img src="/assets/Icons/Icon/Money.svg" alt="Initial Circulating Supply">
                 </div>
               </div>
               <div class="text-center">
@@ -44,7 +44,7 @@
               <div class="mb-4">
                 <div class="mx-auto p-4 flex justify-center items-center rounded-full w-24 h-24 lg"
                      :style="{background: 'rgb(68 178 107)'}">
-                  <img src="/assets/Icons/Icon/QuickSwap.png" alt="">
+                  <img src="/assets/Icons/Icon/QuickSwap.png" alt="Quickswap Listing Price">
                 </div>
               </div>
               <div class="text-center">

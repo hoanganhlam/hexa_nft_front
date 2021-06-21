@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="s1" class="h-full md:h-auto bg-gray-50 dark:bg-gray-900 relative">
-      <img class="hidden md:block w-full" src="/banner-top-text.jpg" alt="">
+      <img class="hidden md:block w-full" src="/banner-top-text.jpg" alt="Step Hero Banner">
       <div class="md:hidden container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
           <div class="px-4 py-12 md:py-6 md:text-center">
@@ -33,7 +33,7 @@
           </div>
           <div class="flex flex-col md:flex-row md:-mx-2">
             <div class="mx-2">
-              <img class="w-64 object-cover" src="/coingecko.png" alt="">
+              <img class="w-64 object-cover" src="/coingecko.png" alt="Coin Gecko">
             </div>
           </div>
         </div>
@@ -48,10 +48,10 @@
         </div>
         <div class="flex flex-wrap -mx-4">
           <div v-for="(item, i) in s3.arr" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
-            <img :src="`/assets/s1/${item.img}.png`" alt="">
+            <img :src="`/assets/s1/${item.img}.png`" :alt="item.title">
             <div class="absolute top-0 left-0 right-0 bottom-0 p-16 px-24 md:p-16 md:px-24 rounded h-full">
               <div v-if="false" class="w-10 mb-4">
-                <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" alt="">
+                <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" :alt="item.title">
               </div>
               <h4 class="font-bold text-black text-xl mb-2">{{ item.title }}</h4>
               <p class="text-sm text-black">{{ item.desc }}</p>
@@ -64,7 +64,7 @@
       <div class="md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex flex-col md:flex-row md:-mx-4 md:items-center justify-start">
           <div class="md:w-1/2">
-            <img src="/game.png" alt="">
+            <img src="/step_hero_game_play.png" alt="Game">
           </div>
           <div class="md:w-1/2">
             <div class="lg:w-2/3 p-4 md:p-16">
@@ -93,7 +93,7 @@
             </div>
           </div>
           <div class="md:w-1/2">
-            <img src="/mkt.png" alt="">
+            <img src="/step_hero_marketplace.png" alt="Marketplace">
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@
           <div class="mb-3 pb-3 border-b border-gray-700 cursor-pointer" v-for="(item, i) in s5.arr" :key="i">
             <div class="py-4 py-3 space-x-4 flex items-center justify-between w-full cursor-pointer"
                  @click="item.active = !item.active">
-              <img :src="`/assets/Icons/Homepage/icon-${i}.png`" alt="">
+              <img :src="`/assets/Icons/Homepage/icon-${i}.png`" :alt="item.title">
               <span class="flex-1 font-bold">{{ item.title }}</span>
               <span class="rounded-full h-7 bg-red-600 shadow-sm shadow-inner p-1.5">
                 <icon :name="item.active ? 'down': 'right'"/>
@@ -159,10 +159,10 @@
         </div>
         <div class="flex flex-wrap -mx-4">
           <div v-for="(item, i) in s6.arr" :key="i" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
-            <img :src="`/assets/s2/${item.img}.png`" alt="">
+            <img :src="`/assets/s2/${item.img}.png`" :alt="item.title">
             <div class="absolute top-0 left-0 right-0 bottom-0 p-32 px-28 md:p-28 md:px-28 rounded h-full">
               <div v-if="false" class="w-10 mb-4">
-                <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" alt="">
+                <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" :alt="item.title">
               </div>
               <h4 class="font-medium">{{ item.title }}</h4>
               <p class="text-sm text-gray-300">{{ item.desc }}</p>
@@ -178,12 +178,12 @@
           <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4 mb-16">Our team</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div v-for="(item, i) in s7.teams" :key="i" class="relative">
-              <img src="/about-bg.png" alt="">
+              <img src="/about-bg.png" alt="About">
               <div class="absolute -top-8 left-0 right-0 bottom-0 flex flex-col py-2 px-12 h-full">
                 <div class="flex justify-center">
                   <div class="w-1/4">
                     <div class="rounded-1by1">
-                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.png`" alt="">
+                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.png`" :alt="item.name">
                     </div>
                     <a v-if="item.link" :href="item.link" target="_blank">
                       <icon name="linkedin"></icon>
@@ -205,12 +205,12 @@
               <h2 class="text-3xl md:text-5xl mb-4 font-medium mt-4 mb-8">Advisor</h2>
               <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div v-for="(item, i) in s7.advisors" :key="i" class="relative">
-                  <img src="/about-bg.png" alt="">
+                  <img src="/about-bg.png" alt="BG">
                   <div class="absolute -top-8 left-0 right-0 bottom-0 flex flex-col py-2 px-12 h-full">
                     <div class="flex justify-center">
                       <div class="w-1/4">
                         <div class="rounded-1by1">
-                          <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.png`" alt="">
+                          <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.png`" :alt="item.title">
                         </div>
                         <a v-if="item.link" :href="item.link" target="_blank">
                           <icon name="linkedin"></icon>
