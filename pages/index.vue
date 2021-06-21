@@ -282,8 +282,8 @@ export default {
           {
             img: null,
             active: false,
-            title: "How to get FLIP tokens?",
-            desc: "When you deposited $HEXA and $BNB into our liquidity pool on PancakeSwap, you will receive FLIP tokens (PancakeSwap’s version of liquidity provider tokens)."
+            title: "How to get QUICK-V2 LP tokens?",
+            desc: "When you deposited $HERO and $MATIC into our liquidity pool on QuickSwap, you will receive QUICK-V2 LP tokens (QuickSwap's version of liquidity provider tokens)."
           },
         ]
       },
