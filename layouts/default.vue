@@ -85,10 +85,10 @@
             <a href="https://market.stephero.io" class="btn-secondary justify-center">Marketplace</a>
           </div>
           <div class="mb-4">
-            <n-link to="/characters/genesis" class="btn-secondary justify-center">Genesis</n-link>
+            <n-link to="/characters/genesis" class="btn-secondary justify-center">Heroes</n-link>
           </div>
           <div class="mb-4">
-            <n-link to="/characters/lp_genesis" class="btn-secondary justify-center">Genesis LP</n-link>
+            <n-link to="/characters/lp_genesis" class="btn-secondary justify-center">Heroes LP</n-link>
           </div>
           <div class="mb-4">
             <n-link to="/token" class="btn-secondary justify-center">Token</n-link>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="s1" class="h-full md:h-auto bg-gray-50 dark:bg-gray-900 relative">
-      <img class="hidden md:block w-full" src="/banner-top-text.jpg" alt="Step Hero Banner">
+      <img class="hidden md:block w-full" src="/Step_Hero_Game_Play.jpg" alt="Step Hero Banner">
       <div class="md:hidden container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
           <div class="px-4 py-12 md:py-6 md:text-center">
@@ -110,7 +110,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             <div class="cursor-pointer">
               <video muted loop autoplay playsinline :id="`video_0`" class="rounded-tl rounded-tr">
-                <source src="https://ipfs.io/ipfs/QmbnsmucLYq8c2oXE3PBKiNdYbYT7PS8YNeMQ3iVnrVapY">
+                <source src="https://stephero-nft.s3.ap-southeast-1.amazonaws.com/heros/step_hero_king_arthur/step_hero_king_arthur_lv1.mp4">
               </video>
               <div class="p-4 flex justify-center">
                 <n-link to="/characters/genesis" class="btn-secondary sm">Heroes</n-link>
@@ -118,7 +118,7 @@
             </div>
             <div class="cursor-pointer">
               <video muted loop autoplay playsinline :id="`video_1`" class="rounded-tl rounded-tr">
-                <source src="https://ipfs.io/ipfs/QmaqMWBpgPQ5a7Z2sWTkbfjn3oTV2RwVS85rM6QJoyrvY2">
+                <source src="https://stephero-nft.s3.ap-southeast-1.amazonaws.com/heros/step_hero_lucifer/step_hero_lucifer.mp4">
               </video>
               <div class="p-4 flex justify-center">
                 <n-link to="/characters/lp_genesis" class="btn-secondary sm">Heroes LP</n-link>
@@ -183,7 +183,7 @@
                 <div class="flex justify-center">
                   <div class="w-1/4">
                     <div class="rounded-1by1">
-                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.png`" :alt="item.name">
+                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.JPG`" :alt="item.name">
                     </div>
                     <a v-if="item.link" :href="item.link" target="_blank">
                       <icon name="linkedin"></icon>
