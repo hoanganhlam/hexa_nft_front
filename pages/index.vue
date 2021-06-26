@@ -6,7 +6,7 @@
         <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
           <div class="px-4 py-12 md:py-6 md:text-center">
             <h1 class="md:hidden mb-4 font-bold text-4xl">{{ s1.title }}</h1>
-            <p class="mb-12 text-2xl">The first NFT Fantasy-Themed RPG Game on Polygon (Previous Matic Network)</p>
+            <p class="mb-12 text-2xl">The first NFT Fantasy-Themed RPG Game on Polygon (Previously Matic Network)</p>
             <div v-if="false" class="flex flex-col justify-center md:flex-row -mx-2">
               <div class="mx-2">
                 <a href="#about" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">About us</a>
@@ -200,29 +200,25 @@
           </div>
         </div>
         <div class="mb-20 text-center">
-          <div class="flex flex-wrap -mx-4 justify-center">
-            <div class="px-4 mb-4 md:mb-8 md:w-2/3 flex flex-col">
-              <h2 class="text-3xl md:text-5xl mb-4 font-medium mt-4 mb-8">Advisor</h2>
-              <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div v-for="(item, i) in s7.advisors" :key="i" class="relative">
-                  <img src="/about-bg.png" alt="BG">
-                  <div class="absolute -top-8 left-0 right-0 bottom-0 flex flex-col py-2 px-12 h-full">
-                    <div class="flex justify-center">
-                      <div class="w-1/4">
-                        <div class="rounded-1by1">
-                          <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.png`" :alt="item.title">
-                        </div>
-                        <a v-if="item.link" :href="item.link" target="_blank">
-                          <icon name="linkedin"></icon>
-                        </a>
-                      </div>
+          <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4 mb-16">Advisor</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div v-for="(item, i) in s7.advisors" :key="i" class="relative">
+              <img src="/about-bg.png" alt="BG">
+              <div class="absolute -top-8 left-0 right-0 bottom-0 flex flex-col py-2 px-12 h-full">
+                <div class="flex justify-center">
+                  <div class="w-1/4">
+                    <div class="rounded-1by1">
+                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.png`" :alt="item.title">
                     </div>
-                    <div>
-                      <h3 class="text-gray-800 font-bold text-lg">{{ item.name }}</h3>
-                      <h4 class="text-gray-700 text-sm mb-2">{{ item.title }}</h4>
-                      <div class="text-gray-600 text-xs" v-html="item.bio"></div>
-                    </div>
+                    <a v-if="item.link" :href="item.link" target="_blank">
+                      <icon name="linkedin"></icon>
+                    </a>
                   </div>
+                </div>
+                <div>
+                  <h3 class="text-gray-800 font-bold text-lg">{{ item.name }}</h3>
+                  <h4 class="text-gray-700 text-sm mb-2">{{ item.title }}</h4>
+                  <div class="text-gray-600 text-xs" v-html="item.bio"></div>
                 </div>
               </div>
             </div>
@@ -375,6 +371,11 @@ export default {
             name: "Johnny Tri Dung",
             title: "Chief Business Officer at Kardiachain",
             bio: "Johnny is Chief Operating Officer (COO) and Co-Founder of Big Cat Entertainment. He has 8 years of experience working as Administrator cadre for large corporations such as CleverAds, Galaxy Pay, Facebook, Youtube, Tiki.vn.... Johnny currently plays the role of advisor for Kardiachain - a famous startup providing comprehensive solution for blockchain infrastructure. He consults us on business development strategy and roadmap."
+          },
+          {
+            name: "Thi Truong",
+            title: "Co-founder & CEO at PolkaFoundry",
+            bio: "Thi has years of experience in blockchain area with PolkaFoundry, which is his most successful project created in 2018 to make the benefits of blockchain more accessible to normal people. He was a Software Engineer, a Solution Architect then being promoted as a Director at FPT Corp. After leaving FPT, he worked as a Product Manager at Kyber Network, one of the most well-known blockchain projects in Asia. He consults us on business development strategy and roadmap."
           },
         ],
         inverters: [
