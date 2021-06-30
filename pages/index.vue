@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="s1" class="h-full md:h-auto bg-gray-50 dark:bg-gray-900 relative">
-      <img class="hidden md:block w-full" src="/Step_Hero_Game_Play.jpg" alt="Step Hero Banner">
+      <img class="hidden md:block w-full" src="/Step_Hero_Game_Play.jpeg" alt="Step Hero Banner">
       <div class="md:hidden container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
           <div class="px-4 py-12 md:py-6 md:text-center">
@@ -136,8 +136,7 @@
         </div>
         <div class="mb-6">
           <div class="mb-3 pb-3 border-b border-gray-700 cursor-pointer" v-for="(item, i) in s5.arr" :key="i">
-            <div class="py-4 py-3 space-x-4 flex items-center justify-between w-full cursor-pointer"
-                 @click="item.active = !item.active">
+            <div class="py-4 py-3 space-x-4 flex items-center justify-between w-full cursor-pointer" @click="item.active = !item.active">
               <img :src="`/assets/Icons/Homepage/icon-${i}.png`" :alt="item.title">
               <span class="flex-1 font-bold">{{ item.title }}</span>
               <span class="rounded-full h-7 bg-red-600 shadow-sm shadow-inner p-1.5">
@@ -201,7 +200,7 @@
         </div>
         <div class="mb-20 text-center">
           <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4 mb-16">Advisor</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:w-2/3 mx-auto">
             <div v-for="(item, i) in s7.advisors" :key="i" class="relative">
               <img src="/about-bg.png" alt="BG">
               <div class="absolute -top-8 left-0 right-0 bottom-0 flex flex-col py-2 px-12 h-full">
@@ -367,11 +366,11 @@ export default {
             title: "COO Gourmet Galaxy, CEO Tag Ventures",
             bio: "Nam Nguyen is CEO of Tagchain.io and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
           },
-          {
-            name: "Johnny Tri Dung",
-            title: "Chief Business Officer at Kardiachain",
-            bio: "Johnny is Chief Operating Officer (COO) and Co-Founder of Big Cat Entertainment. He has 8 years of experience working as Administrator cadre for large corporations such as CleverAds, Galaxy Pay, Facebook, Youtube, Tiki.vn.... Johnny currently plays the role of advisor for Kardiachain - a famous startup providing comprehensive solution for blockchain infrastructure. He consults us on business development strategy and roadmap."
-          },
+          // {
+          //   name: "Johnny Tri Dung",
+          //   title: "Chief Business Officer at Kardiachain",
+          //   bio: "Johnny is Chief Operating Officer (COO) and Co-Founder of Big Cat Entertainment. He has 8 years of experience working as Administrator cadre for large corporations such as CleverAds, Galaxy Pay, Facebook, Youtube, Tiki.vn.... Johnny currently plays the role of advisor for Kardiachain - a famous startup providing comprehensive solution for blockchain infrastructure. He consults us on business development strategy and roadmap."
+          // },
           {
             name: "Thi Truong",
             title: "Co-founder & CEO at PolkaFoundry",
