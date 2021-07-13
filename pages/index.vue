@@ -44,7 +44,7 @@
         <div class="container mx-auto xs text-center mb-24">
           <span class="text-red-600 uppercase">Project</span>
           <h2 class="text-5xl mt-4 mb-8 font-medium">{{ s3.title }}</h2>
-          <p class="text-gray-300">More than a game, Step Hero also has features of a social network with a strong community, helping players on investment to earn money from game.</p>
+          <p class="text-gray-300">Step Hero ecosystem is the perfect combination of NFT gaming and DeFi that enables users to have fun and earn profit simultaneously. The comprehensive ecosystem comprises Step Hero RPG game, Heroes Farming, and NFT Marketplace. More than a game, Step Hero also has a strong community helping players on investing activites to earn money from game.</p>
         </div>
         <div class="flex flex-wrap -mx-4">
           <div v-for="(item, i) in s3.arr" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
@@ -69,11 +69,8 @@
           <div class="md:w-1/2">
             <div class="lg:w-2/3 p-4 md:p-16">
               <span class="text-red-600 uppercase">Gameplay</span>
-              <h2 class="text-5xl font-medium mt-4 mb-6">Heroes save a world destroyed</h2>
-              <p class="my-4 text-gray-300">
-                Plot of Step Hero is based on the scene of a world destroyed by the legion of demon lord Lucifer. Players will take the role of heroes in different eras accompanying archangel Gabriel to fight against the army of shadow.
-              </p>
-              <p class="mb-6 text-gray-300">The player's mission is to fight, collect in-game items and money (Hexa coin), craft weapons to buff energy, then continue to fight. The power level of the shadow legion will become stronger and stronger.</p>
+              <h2 class="text-5xl font-medium mt-4 mb-6">Save the world</h2>
+              <p class="my-4 text-gray-300">The Step Hero game's plot hinges on the post-apocalyptic war between the army of Shadows led by Lucifer - The Demon Lord and the Heroes led by archangel Gabriel. The players will play the Hero roles. Your missions are fighting against the villains in battles while buffing your energy by collecting in-game items, earning money (in HEXA coins), and upgrading your characters. </p>
               <n-link to="/battle" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">Battle</n-link>
             </div>
           </div>
@@ -86,9 +83,9 @@
           <div class="md:w-1/2">
             <div class="p-4 md:p-6">
               <span class="text-red-600 uppercase">Marketplace</span>
-              <h2 class="text-5xl font-medium mt-4 mb-6">Multi-Chain based NFTs platform</h2>
-              <p class="my-8 text-lg text-gray-300">
-                Hero NFTs Marketplace is a Multi-Chain based NFTs platform where users can create, sell, and buy NFTs digital content easily              </p>
+              <h2 class="text-5xl font-medium mt-4 mb-6">Cross-chain NFT platform</h2>
+              <p class="my-8 text-lg text-gray-300">Step Hero NFTs Marketplace is where you create, sell, and buy NFTs digital content. Moreover, you can launch NFT auctions, earn commissions from affiliate programs, and build your favorite NFT collection.
+              </p>
               <a href="https://market.stephero.io/" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">Visit</a>
             </div>
           </div>
@@ -164,7 +161,7 @@
                 <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" :alt="item.title">
               </div>
               <h4 class="font-medium">{{ item.title }}</h4>
-              <p class="text-sm text-gray-300">{{ item.desc }}</p>
+              <div class="text-sm text-gray-300" v-html="item.desc"></div>
             </div>
           </div>
         </div>
@@ -245,34 +242,34 @@ export default {
           {
             img: 'red',
             title: "RPG Game",
-            desc: "Plot of Step Hero is based on the scene of a world destroyed by the legion of demon lord Lucifer. Players will take the role of heroes in different eras accompanying archangel Gabriel to fight against the army of shadow."
+            desc: "The Step Hero game's plot hinges on the post-apocalyptic war between the army of Shadows led by Lucifer - The Demon Lord and the Heroes led by archangel Gabriel. The players will play the hero roles. Their missions are fighting against the villains in battles while buffing their energy by collecting in-game items, earning money (in HEXA coins), and upgrading their characters."
           },
           {
             img: 'green',
             title: "Heroes Farming",
-            desc: "When users stake HERO, they earn Hexa points. Hexa points are used to redeem NFTs. When it comes to redemption, the corresponding Hexa points are burned."
+            desc: "Holders of HERO tokens can either stake HERO to earn HEXA points or stake HERO-MATIC LP to earn QUICK-V2 LP tokens. Users can redeem HEXA and QUICK-V2 LP for NFTs that can be traded on marketplace. After the redemption, the corresponding Hexa points are burned."
           },
           {
             img: 'blue',
             title: "NFTs Marketplace",
-            desc: "Hero NFTs Marketplace is a Multi-Chain based NFTs platform where users can create, sell, and buy NFTs digital content easily."
+            desc: "Step Hero NFTs Marketplace is a cross-chained NFT platform where users can easily create, sell, and buy NFTs digital content. The marketplace is equipped with superior features such as NFTs auctions, affiliate programs,..."
           },
         ]
       },
       s4: {
         title: "Heroes Collection",
-        desc: "Collectibles of Hero cards with the uniqueness of each character.",
+        desc: "Collectibles of unique and valuable Hero character cards.",
         arr: []
       },
       s5: {
         title: "FAQ",
-        desc: "A list of commonly asked questions and answers on a website about project information.",
+        desc: "Frequently asked questions and answers about the project.",
         arr: [
           {
             img: null,
             active: false,
             title: "Can I buy and sell HERO Cards on NFTs market place?",
-            desc: "HERO cards are limited and digitally scarce as they are created based on Non‑fungible tokens (NFTs). These special tokens are used on Polygon to generate verifiable digital scarcity. You could sell HERO Cards on NFTs market place once they reach a certain value which you expect."
+            desc: "Yes. HERO cards are unique non-fungible-tokens (NFTs) that can be traded in NFTs marketplace. These special tokens are used on Polygon to generate verifiable digital scarcity. You could sell HERO Cards on NFTs marketplace once they reach a certain value which you expect."
           },
           {
             img: null,
@@ -289,19 +286,19 @@ export default {
           {
             img: 'red',
             color: "#45B26B",
-            title: "NFTs Market",
-            desc: "NFT Marketplace will be launched in order to buy, sell and trade NFTs. The market will ensure sustainability of the collectible ecosystem."
+            title: "Q2/2021",
+            desc: `NFT Marketplace will be launched in order to buy, sell and trade NFTs. The market will ensure sustainability of the collectible ecosystem.`
           },
           {
             img: 'green',
             color: "#EF466F",
-            title: "Weapon NFTs",
-            desc: "A series of Weapon NFTs will be released. It would help to empower the attack and defense's capability of the character"
+            title: "Q3/2021",
+            desc: "A series of Weapon NFTs will be released. It would help to empower the attack and defense's capability of the character."
           },
           {
             img: 'blue',
             color: "#9757D7",
-            title: "HERO Battle",
+            title: "Q4/2021",
             desc: "Become a legend through intense PvP arena battles! Join open tournaments for big rewards."
           }
         ]
@@ -364,7 +361,7 @@ export default {
           {
             name: "Nam Nguyen",
             title: "COO Gourmet Galaxy, CEO Tag Ventures",
-            bio: "Nam Nguyen is CEO of Tagchain.io and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
+            bio: "Mr. Nam Nguyen is the CEO of Tagchain.io and the Founder of TAG Ventures, one of the top venture capital firms in South East Asia. He is also the CEO of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on system operation and new market entry strategy, which assists us in expanding market share and achieving sustainable development."
           },
           // {
           //   name: "Johnny Tri Dung",
@@ -374,7 +371,7 @@ export default {
           {
             name: "Thi Truong",
             title: "Co-founder & CEO at PolkaFoundry",
-            bio: "Thi has years of experience in blockchain area with PolkaFoundry, which is his most successful project created in 2018 to make the benefits of blockchain more accessible to normal people. He was a Software Engineer, a Solution Architect then being promoted as a Director at FPT Corp. After leaving FPT, he worked as a Product Manager at Kyber Network, one of the most well-known blockchain projects in Asia. He consults us on business development strategy and roadmap."
+            bio: "Mr. Thi has years of expertise in the blockchain space. His most successful initiative was PolkaFoundry, which was launched in 2018 to make the benefits of blockchain more accessible to the general public. He worked as a Software Engineer, then as a Solution Architect before being elevated to Director at FPT Corp. Following his departure from FPT, he worked as a Product Manager at Kyber Network, one of Asia's most well-known blockchain initiatives. He advises us on the company growth strategy and roadmap."
           },
         ],
         inverters: [
