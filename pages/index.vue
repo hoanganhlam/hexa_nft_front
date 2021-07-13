@@ -49,7 +49,7 @@
         <div class="flex flex-wrap -mx-4">
           <div v-for="(item, i) in s3.arr" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
             <img :src="`/assets/s1/${item.img}.png`" :alt="item.title">
-            <div class="absolute top-0 left-0 right-0 bottom-0 p-16 px-24 md:p-16 md:px-24 rounded h-full">
+            <div class="absolute top-0 left-0 right-0 bottom-0 p-16 px-24 md:p-16 md:px-20 rounded h-full">
               <div v-if="false" class="w-10 mb-4">
                 <img class="" :src="`/assets/Icons/Homepage/${i + 1}.png`" :alt="item.title">
               </div>
