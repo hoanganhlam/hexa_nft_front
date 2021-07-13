@@ -220,6 +220,10 @@
             </div>
           </div>
         </div>
+        <div class="text-center">
+          <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4">Partners & Investors</h2>
+          <img src="/s8.png" alt="Partners & Advisors">
+        </div>
       </div>
     </section>
   </div>
