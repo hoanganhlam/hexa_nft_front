@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="py-44 md:h-screen">
+    <section id="tokenomics" class="py-44 md:h-screen">
       <div class="px-6 md:px-0 container h-full flex flex-col items-center justify-center mx-auto">
         <div class="mb-12 container xs text-center">
           <h2 class="text-5xl mb-8 font-bold">
