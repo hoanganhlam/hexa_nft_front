@@ -46,7 +46,7 @@ export default {
     return {
       s4: {
         title: "Featured Genesis",
-        desc: "Collectibles of Goku cards with the uniqueness of each character.",
+        desc: "Collectibles of Hero cards with the uniqueness of each character.",
         arr: []
       },
     }

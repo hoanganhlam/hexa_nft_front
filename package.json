@@ -1,6 +1,6 @@
 {
-  "name": "Goku_Front",
-  "version": "1.0.0",
+  "name": "hexa_nft_front",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "nuxt",

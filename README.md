@@ -1,4 +1,4 @@
-# Goku_Front
+# Hexa NFT frontend
 
 ## Build Setup
 

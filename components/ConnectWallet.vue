@@ -14,9 +14,9 @@
 <!--              <div class="text-center cursor-pointer p-2.5 border-b" @click="removeWallet">Exit</div>-->
             </div>
             <div v-else-if="contractToken">
-              <h4 class="mb-4 font-bold">Deposit $GOKU, Earn ball, mint NFTs</h4>
-              <p class="mb-4 font-normal">Staking GOKU tokens in the Genesis pool earns you roughly 1 credit per day, With
-                enough ball, you can mint an exclusive limited-edition NFT goku. Supply and balls required differ across
+              <h4 class="mb-4 font-bold">Deposit $HERO, Earn ball, mint NFTs</h4>
+              <p class="mb-4 font-normal">Staking HERO tokens in the Genesis pool earns you roughly 1 credit per day, With
+                enough ball, you can mint an exclusive limited-edition NFT hero. Supply and balls required differ across
                 NFTs</p>
               <div class="mb-4 flex -mx-1.5">
                 <div class="px-1.5 flex-1" :class="{'animate-pulse': loading.stake}">
@@ -67,7 +67,6 @@ import Web3 from "web3";
 import SVGIcon from "@/components/Icon.vue";
 import {ABI_GENESIS} from "@/plugins/abi";
 import QRCodeModal from "@walletconnect/qrcode-modal";
-import KardiaClient from 'kardia-js-sdk';
 const rpcURL = process.env.rpcURL
 
 export default {
