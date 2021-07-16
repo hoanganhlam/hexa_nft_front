@@ -8,7 +8,7 @@
             <br>
             <span>Tokenomics</span>
           </h2>
-          <p class="text-gray-400 text-xl mb-4">HERO token is the platform of sharing profits and governancing tokens. The total supply is fixed at 500 million tokens.</p>
+          <p class="text-gray-400 text-xl mb-4">HERO token is the platform of sharing profits and governancing tokens. The total supply is fixed at 100 million tokens.</p>
         </div>
         <div class="w-full flex flex-col md:flex-row flex-wrap -mx-4">
           <div class="md:px-4 mb-8 md:w-1/3">
@@ -44,12 +44,12 @@
               <div class="mb-4">
                 <div class="mx-auto p-4 flex justify-center items-center rounded-full w-24 h-24 lg"
                      :style="{background: 'rgb(68 178 107)'}">
-                  <img src="/assets/Icons/Icon/QuickSwap.png" alt="Quickswap Listing Price">
+                  <img src="/assets/icon-sh.png" alt="Quickswap Listing Price" class="w-8 h-8">
                 </div>
               </div>
               <div class="text-center">
-                <h4 class="mb-2 font-bold text-xl">$0.1</h4>
-                <span class="text-gray-400">Quickswap Listing Price</span>
+                <h4 class="mb-2 font-bold text-xl">$0.08</h4>
+                <span class="text-gray-400">Public Sale Price</span>
               </div>
             </div>
           </div>
