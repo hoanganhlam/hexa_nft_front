@@ -46,7 +46,7 @@
             </li>
             <li class="flex justify-center md:justify-start">
               <icon vb="90" class="md" name="tl" fill="#000"/>
-              <a href="https://t.me/stephero_ann" target="_blank" class="text-gray-300 mb-2">
+              <a href="https://t.me/stephero_chat" target="_blank" class="text-gray-300 mb-2">
                 Telegram
               </a>
             </li>
