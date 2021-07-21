@@ -63,8 +63,11 @@
     <section id="s3-2" class="dark:bg-gray-800 relative">
       <div class="md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex flex-col md:flex-row md:-mx-4 md:items-center justify-start">
-          <div class="md:w-1/2">
+          <div class="md:w-1/2 relative">
             <img src="/step_hero_game_play.png" alt="Game">
+            <div class="absolute top-0 right-0 left-0 bottom-0 flex flex-wrap items-center justify-center">
+              <img class="shadow-lg cursor-pointer w-16" src="/play.png" alt="Play Button" @click="showing = true">
+            </div>
           </div>
           <div class="md:w-1/2">
             <div class="lg:w-2/3 p-4 md:p-16">
@@ -226,6 +229,20 @@
         </div>
       </div>
     </section>
+    <transition name="fade">
+      <div v-show="showing" class="modal">
+        <div class="mx-auto w-full md:w-1/2 md:mt-24 flex flex-col justify-end md:justify-start h-full">
+          <div class="mb-2 flex justify-end">
+            <div class="cursor-pointer ml-auto rounded-full bg-gray-700 p-2.5 inline-flex" @click="showing = false">
+              <icon name="x"></icon>
+            </div>
+          </div>
+          <div>
+            <iframe src="https://player.vimeo.com/video/577530134" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -237,6 +254,7 @@ export default {
   name: "PageIndex",
   data() {
     return {
+      showing: false,
       s1: {
         title: "Fantasy-themed RPG Game",
       },
