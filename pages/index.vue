@@ -197,7 +197,7 @@
         </div>
         <div class="mb-20 text-center">
           <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4 mb-16">Advisor</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:w-2/3 mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto">
             <div v-for="(item, i) in s7.advisors" :key="i" class="relative">
               <img src="/about-bg.png" alt="BG">
               <div class="absolute -top-8 left-0 right-0 bottom-0 flex flex-col py-2 px-12 h-full">
@@ -376,6 +376,11 @@ export default {
             name: "Thi Truong",
             title: "Co-founder & CEO at PolkaFoundry",
             bio: "Mr. Thi has years of expertise in the blockchain space. His most successful initiative was PolkaFoundry, which was launched in 2018 to make the benefits of blockchain more accessible to the general public. He worked as a Software Engineer, then as a Solution Architect before being elevated to Director at FPT Corp. Following his departure from FPT, he worked as a Product Manager at Kyber Network, one of Asia's most well-known blockchain initiatives. He advises us on the company growth strategy and roadmap."
+          },
+          {
+            name: "Thanh Hoang",
+            title: "CEO & Founder of EzDefi",
+            bio: "Mr. Thanh has been involving in cryptocurrencies since 2016 as a Bitcoin miner and investor. He got his MBA from UWIC and worked as a manager in Vingroup and later as the CTO of Nexty ( a public chain project). In 2017, Thanh founded ezDeFi and launched various products. Thanh is currently CEO of ezDeFi and the project is reaching constant new growth."
           },
         ],
         inverters: [
