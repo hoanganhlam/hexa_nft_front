@@ -49,7 +49,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: process.env.API_DOMAIN || "https://api-be.gokumoon.com",
+    baseURL: process.env.API_DOMAIN || "https://api.stephero.io",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

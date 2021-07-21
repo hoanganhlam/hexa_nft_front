@@ -365,7 +365,7 @@ export default {
           {
             name: "Nam Nguyen",
             title: "COO Gourmet Galaxy, CEO Tag Ventures",
-            bio: "Mr. Nam Nguyen is the CEO of Tagchain.io and the Founder of TAG Ventures, one of the top venture capital firms in South East Asia. He is also the CEO of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on system operation and new market entry strategy, which assists us in expanding market share and achieving sustainable development."
+            bio: "Nam Nguyen is CEO of TAG Vietnam and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
           },
           // {
           //   name: "Johnny Tri Dung",

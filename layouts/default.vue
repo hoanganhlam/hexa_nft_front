@@ -17,13 +17,9 @@
 <!--                </div>-->
                 <div class="pt-2 absolute">
                   <div class="py-1 border border-gray-600 rounded w-48 top-full bg-gray-700">
-                    <a href="https://gokuball.com/" class="w-full flex space-x-2 p-4 py-2 cursor-pointer border-b border-gray-600">
+                    <a href="/" class="w-full flex space-x-2 p-4 py-2 cursor-pointer border-b border-gray-600">
                       <img class="h-6 object-cover" src="/binance.png" alt="">
                       <span>Binance</span>
-                    </a>
-                    <a href="https://kai.gokuball.com/" class="w-full flex space-x-2 p-4 py-2 cursor-pointer">
-                      <img class="h-6 object-cover" src="/kardiachain.png" alt="">
-                      <span>KardiaChain</span>
                     </a>
                   </div>
                 </div>
@@ -115,33 +111,7 @@
     <main class="flex-1 dark:text-white dark:bg-gray-900">
       <Nuxt/>
     </main>
-    <footer class="dark:text-white dark:bg-gray-900">
-      <div class="p-6 flex justify-center text-center">
-        <div>
-          <img class="md:mb-4 h-16 mx-auto object-contain" src="/step_hero_logo.png" alt="Gokumoon">
-        </div>
-      </div>
-      <div class="py-6 justify-center flex" v-if="false">
-        <a target="_blank" href="https://twitter.com/GokuballNFTs" class="mx-3">
-          <icon class="md" name="tw"/>
-        </a>
-        <a target="_blank" href="https://gokuball.medium.com/" class="mx-3">
-          <icon vb="70" class="md" name="me" fill="#000"/>
-        </a>
-        <a target="_blank" href="https://t.me/joinchat/j17LwlXiwHdmYjRl" class="mx-3">
-          <icon vb="70" class="md" name="tl" fill="#000"/>
-        </a>
-      </div>
-      <div class="p-6 border-t bg-purple-50 bg-opacity-20 dark:bg-gray-800 dark:border-gray-700">
-        <div class="container mx-auto flex justify-between">
-          <div class="text-gray-500">HERO © 2021</div>
-          <div class="flex">
-            <n-link to="/pages/privacy" class="mx-2">Privacy</n-link>
-            <n-link to="/pages/about" class="mx-2">About</n-link>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <page-footer />
     <client-only>
       <connect-wallet/>
     </client-only>
@@ -160,9 +130,10 @@
 import SVGIcon from "~/components/Icon.vue";
 import ConnectWallet from "@/components/ConnectWallet.vue";
 import Dropdown from "@/components/Dropdown";
+import PageFooter from "@/components/PageFooter";
 
 export default {
-  components: {Dropdown, ConnectWallet, icon: SVGIcon},
+  components: {Dropdown, ConnectWallet, PageFooter, icon: SVGIcon},
   data() {
     return {
       showMenu: false,
