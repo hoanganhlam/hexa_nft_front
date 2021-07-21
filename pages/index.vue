@@ -396,7 +396,7 @@ export default {
             bio: "Mr. Thi has years of expertise in the blockchain space. His most successful initiative was PolkaFoundry, which was launched in 2018 to make the benefits of blockchain more accessible to the general public. He worked as a Software Engineer, then as a Solution Architect before being elevated to Director at FPT Corp. Following his departure from FPT, he worked as a Product Manager at Kyber Network, one of Asia's most well-known blockchain initiatives. He advises us on the company growth strategy and roadmap."
           },
           {
-            name: "Thanh Hoang",
+            name: "Thanh Dao",
             title: "CEO & Founder of EzDefi",
             bio: "Mr. Thanh has been involving in cryptocurrencies since 2016 as a Bitcoin miner and investor. He got his MBA from UWIC and worked as a manager in Vingroup and later as the CTO of Nexty ( a public chain project). In 2017, Thanh founded ezDeFi and launched various products. Thanh is currently CEO of ezDeFi and the project is reaching constant new growth."
           },
