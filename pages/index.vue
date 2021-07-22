@@ -64,10 +64,11 @@
       <div class="md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex flex-col md:flex-row md:-mx-4 md:items-center justify-start">
           <div class="md:w-1/2 relative">
-            <img src="/step_hero_game_play.png" alt="Game">
-            <div class="absolute top-0 right-0 left-0 bottom-0 flex flex-wrap items-center justify-center">
-              <img class="shadow-lg cursor-pointer w-16" src="/play.png" alt="Play Button" @click="showing = true">
-            </div>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/577997987?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:1rem;width:100%;height:100%;" title="SH-gameplot-final.mp4"></iframe></div>
+<!--            <img src="/step_hero_game_play.png" alt="Game">-->
+<!--            <div class="absolute top-0 right-0 left-0 bottom-0 flex flex-wrap items-center justify-center">-->
+<!--              <img class="shadow-lg cursor-pointer w-16" src="/play.png" alt="Play Button" @click="showing = true">-->
+<!--            </div>-->
           </div>
           <div class="md:w-1/2">
             <div class="lg:w-2/3 p-4 md:p-16">
