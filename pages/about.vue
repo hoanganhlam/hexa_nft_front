@@ -62,7 +62,7 @@ export default {
         {
           title: "Krillin Tao",
           subtitle: "Art & Game Director",
-          desc: "Tao has 15 years of working experience in art communication and game design. He was one of the creators of the animation coloring application for kids participating in the Bluebird Award — the largest competition for game developers in Vietnam in 2016. In 2012, he won “Best game idea” award in Gamejam by FPT Arera Hanoi. This talented man is the founder of Skrollcat Studio — the development team of the phenomenal action-puzzle game “Hoa”. Hoa was the first made-in-Vietnam game ever debuted in both Steam and Nintendo Switch. His team’s extensive expertise in game design will contribute significantly to Step Hero’s novelistic gaming experience."
+          desc: "Tao has 15 years of working experience in art communication and game design. He was one of the creators of the animation coloring application for kids participating in the Bluebird Award — the largest competition for game developers in Vietnam in 2016. In 2012, he won “Best game idea” award in Gamejam by FPT Arera Hanoi."
         }
       ],
       advisors: [
