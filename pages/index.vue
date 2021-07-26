@@ -331,7 +331,7 @@ export default {
           {
             img: 'green',
             title: "Heroes Farming",
-            desc: "Holders of HERO tokens can stake HERO to earn STEP points. Besides, they also can stake HERO-MATIC LP to earn QUICK-V2 LP token on QuickSwap or HERO-BNB LP to earn FLIP on PancakeSwap. Users can redeem STEP and QUICK-V2 LP or FLIP for NFTs that can be traded on marketplace. After the redemption, the corresponding STEP points are burned."
+            desc: "Holders of HERO tokens can either stake HERO to earn STEP points or stake HERO-BNB LP to earn FLIP on PancakeSwap. Users can redeem STEP and FLIP for NFTs that can be traded on marketplace. After the redemption, the corresponding STEP points are burned."
           },
           {
             img: 'blue',
@@ -359,7 +359,7 @@ export default {
             img: null,
             active: false,
             title: "How to get LP tokens?",
-            desc: "<ul><li>- When you deposited $HERO and $MATIC into our liquidity pool on QuickSwap, you will receive QUICK-V2 LP tokens (QuickSwap's version of liquidity provider tokens).</li>- When you deposited $HERO and $BNB into our liquidity pool on PancakeSwap, you will receive FLIP tokens (PancakeSwap's version of liquidity provider tokens).<li></li></ul>"
+            desc: "- When you deposited $HERO and $BNB into our liquidity pool on PancakeSwap, you will receive FLIP tokens (PancakeSwap's version of liquidity provider tokens)."
           },
         ]
       },
