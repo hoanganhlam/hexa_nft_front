@@ -145,7 +145,7 @@
               </span>
             </div>
             <transition name="fade">
-              <div v-if="item.active" class="content text-gray-400 pb-4">{{ item.desc }}</div>
+              <div v-if="item.active" class="content text-gray-400 pb-4" v-html="item.desc"></div>
             </transition>
           </div>
         </div>
@@ -226,7 +226,7 @@
         </div>
         <div class="text-center">
           <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4">Partners & Investors</h2>
-          <img src="/s8.png" alt="Partners & Advisors">
+          <img src="/s8.JPG" alt="Partners & Advisors">
         </div>
       </div>
     </section>
@@ -253,8 +253,69 @@ import SVGIcon from "~/components/Icon.vue";
 export default {
   components: {icon: SVGIcon},
   name: "PageIndex",
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.page.desc
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.page.title
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.page.desc
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: this.page.image
+        },
+        {
+          hid: 'twitter:image:alt',
+          name: 'twitter:image:alt',
+          content: this.page.title
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.page.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.page.desc
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.page.image
+        },
+        {
+          hid: 'og:image:secure_url',
+          property: 'og:image:secure_url',
+          content: this.page.image
+        },
+        {
+          hid: 'og:image:alt',
+          property: 'og:image:alt',
+          content: this.page.title
+        }
+      ]
+    }
+  },
   data() {
     return {
+      page: {
+        title: "Step Hero",
+        desc: "Step Hero ecosystem is the perfect combination of NFT gaming and DeFi that enables users to have fun and earn profit simultaneously.",
+        image: "https://stephero.io/Step_Hero_Game_Play.jpeg"
+      },
       showing: false,
       s1: {
         title: "Fantasy-themed RPG Game",
@@ -270,7 +331,7 @@ export default {
           {
             img: 'green',
             title: "Heroes Farming",
-            desc: "Holders of HERO tokens can either stake HERO to earn HEXA points or stake HERO-MATIC LP to earn QUICK-V2 LP tokens. Users can redeem HEXA and QUICK-V2 LP for NFTs that can be traded on marketplace. After the redemption, the corresponding Hexa points are burned."
+            desc: "Holders of HERO tokens can stake HERO to earn STEP points. Besides, they also can stake HERO-MATIC LP to earn QUICK-V2 LP token on QuickSwap or HERO-BNB LP to earn FLIP on PancakeSwap. Users can redeem STEP and QUICK-V2 LP or FLIP for NFTs that can be traded on marketplace. After the redemption, the corresponding STEP points are burned."
           },
           {
             img: 'blue',
@@ -292,13 +353,13 @@ export default {
             img: null,
             active: false,
             title: "Can I buy and sell HERO Cards on NFTs market place?",
-            desc: "Yes. HERO cards are unique non-fungible-tokens (NFTs) that can be traded in NFTs marketplace. These special tokens are used on Polygon to generate verifiable digital scarcity. You could sell HERO Cards on NFTs marketplace once they reach a certain value which you expect."
+            desc: "Yes. HERO cards are unique non-fungible-tokens (NFTs) that can be traded in NFTs marketplace. These special tokens are used on BSC & Polygon to generate verifiable digital scarcity. You could sell HERO Cards on NFTs marketplace once they reach a certain value which you expect."
           },
           {
             img: null,
             active: false,
-            title: "How to get QUICK-V2 LP tokens?",
-            desc: "When you deposited $HERO and $MATIC into our liquidity pool on QuickSwap, you will receive QUICK-V2 LP tokens (QuickSwap's version of liquidity provider tokens)."
+            title: "How to get LP tokens?",
+            desc: "<ul><li>- When you deposited $HERO and $MATIC into our liquidity pool on QuickSwap, you will receive QUICK-V2 LP tokens (QuickSwap's version of liquidity provider tokens).</li>- When you deposited $HERO and $BNB into our liquidity pool on PancakeSwap, you will receive FLIP tokens (PancakeSwap's version of liquidity provider tokens).<li></li></ul>"
           },
         ]
       },
