@@ -24,6 +24,9 @@
           <div class="font-bold mb-4">About HERO</div>
           <ul>
             <li class="text-gray-300 mb-2">
+              <n-link to="/about">About</n-link>
+            </li>
+            <li class="text-gray-300 mb-2">
               <n-link to="/">Features</n-link>
             </li>
             <li class="text-gray-300 mb-2">
