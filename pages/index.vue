@@ -314,7 +314,7 @@ export default {
       page: {
         title: "Step Hero",
         desc: "Step Hero ecosystem is the perfect combination of NFT gaming and DeFi that enables users to have fun and earn profit simultaneously.",
-        image: "https://stephero.io/Step_Hero_Game_Play.jpeg"
+        image: "https://stephero.io/thumbnail.jpg"
       },
       showing: false,
       s1: {
