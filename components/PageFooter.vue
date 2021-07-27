@@ -11,7 +11,8 @@
           <img class="md:mb-4 h-16 mx-auto object-contain" src="/step_hero_logo.png" alt="StepHero">
           <div class="text-gray-300">HERO © 2021</div>
           <div>
-            <a href="https://www.polygon.technology" class="text-gray-300 mb-2" target="_blank">Powered by Polygon</a>
+            <p>Powered by <a href="https://www.binance.org/" class="text-gray-300 mb-2" target="_blank">BSC</a> and <a href="https://www.polygon.technology" class="text-gray-300 mb-2" target="_blank">Polygon</a></p>
+
           </div>
         </div>
         <div class="mt-2 mb-8 md:mb-2">

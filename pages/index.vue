@@ -5,8 +5,8 @@
       <div class="md:hidden container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
           <div class="px-4 py-12 md:py-6 md:text-center">
-<!--            <h1 class="md:hidden mb-4 font-bold text-4xl">{{ s1.title }}</h1>-->
-            <p class="mb-12 text-2xl">The lucrative NFT fantasy-themed RPG game on BSC and Polygon</p>
+            <h1 class="md:hidden mb-4 font-bold text-4xl">The lucrative NFT fantasy-themed RPG game on BSC and Polygon</h1>
+<!--            <p class="mb-12 text-2xl"></p>-->
             <div v-if="false" class="flex flex-col justify-center md:flex-row -mx-2">
               <div class="mx-2">
                 <a href="#about" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">About us</a>
