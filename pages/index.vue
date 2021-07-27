@@ -5,8 +5,8 @@
       <div class="md:hidden container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
           <div class="px-4 py-12 md:py-6 md:text-center">
-            <h1 class="md:hidden mb-4 font-bold text-4xl">{{ s1.title }}</h1>
-            <p class="mb-12 text-2xl">The first NFT Fantasy-Themed RPG Game on Polygon (Previously Matic Network)</p>
+<!--            <h1 class="md:hidden mb-4 font-bold text-4xl">{{ s1.title }}</h1>-->
+            <p class="mb-12 text-2xl">The lucrative NFT fantasy-themed RPG game on BSC and Polygon</p>
             <div v-if="false" class="flex flex-col justify-center md:flex-row -mx-2">
               <div class="mx-2">
                 <a href="#about" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">About us</a>
@@ -74,7 +74,7 @@
             <div class="lg:w-2/3 p-4 md:p-16">
               <span class="text-red-600 uppercase">Gameplay</span>
               <h2 class="text-5xl font-medium mt-4 mb-6">Save the world</h2>
-              <p class="my-4 text-gray-300">The Step Hero game's plot hinges on the post-apocalyptic war between the army of Shadows led by Lucifer - The Demon Lord and the Heroes led by archangel Gabriel. The players will play the Hero roles. Your missions are fighting against the villains in battles while buffing your energy by collecting in-game items, earning money (in HEXA coins), and upgrading your characters. </p>
+              <p class="my-4 text-gray-300">The Step Hero game's plot hinges on the post-apocalyptic war between the army of Shadows led by Lucifer - The Demon Lord and the Heroes led by archangel Gabriel. The players will play the Hero roles. Your missions are fighting against the villains in battles while buffing your energy by collecting in-game items, earning money (in STEP coins), and upgrading your characters.</p>
               <n-link to="/battle" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">Battle</n-link>
             </div>
           </div>
@@ -326,12 +326,12 @@ export default {
           {
             img: 'red',
             title: "RPG Game",
-            desc: "The Step Hero game's plot hinges on the post-apocalyptic war between the army of Shadows led by Lucifer - The Demon Lord and the Heroes led by archangel Gabriel. The players will play the hero roles. Their missions are fighting against the villains in battles while buffing their energy by collecting in-game items, earning money (in HEXA coins), and upgrading their characters."
+            desc: "The Step Hero game's plot hinges on the post-apocalyptic war between the army of Shadows led by Lucifer - The Demon Lord and the Heroes led by archangel Gabriel. The players will play the hero roles. Their missions are fighting against the villains in battles while buffing their energy by collecting in-game items, earning money (in STEP coins), and upgrading their characters."
           },
           {
             img: 'green',
             title: "Heroes Farming",
-            desc: "Holders of HERO tokens can either stake HERO to earn STEP points or stake HERO-BNB LP to earn FLIP on PancakeSwap. Users can redeem STEP and FLIP for NFTs that can be traded on marketplace. After the redemption, the corresponding STEP points are burned."
+            desc: "Holders of HERO tokens can either stake HERO to earn Points or stake HERO-BNB LP to earn FLIP on PancakeSwap. Users can redeem Points and FLIP for NFTs that can be traded on marketplace. After the redemption, the corresponding Points are burned."
           },
           {
             img: 'blue',
