@@ -226,7 +226,9 @@
         </div>
         <div class="text-center">
           <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4">Partners & Investors</h2>
-          <img src="/s8.JPG" alt="Partners & Advisors">
+          <div class="my-8 md:my-16 grid grid-cols-2 md:grid-cols-6 gap-6">
+            <img v-for="i in partners" :key="i" :src="`/partner/${i}.png`" :alt="i">
+          </div>
         </div>
       </div>
     </section>
@@ -473,7 +475,29 @@ export default {
         ]
       },
       dataset: [],
-      fetching: false
+      fetching: false,
+      partners: [
+        "1010",
+        "barmy",
+        "bsc-new",
+        "BSCdaily",
+        "cmc",
+        "cointv",
+        "danchoicoin",
+        "DCI",
+        "exntc",
+        "frontier",
+        "gum",
+        "icetea_lab",
+        "kingman",
+        "launchzone",
+        "mayor",
+        "OIG",
+        "polygon",
+        "red-kite",
+        "TAG",
+        "tribeone"
+      ]
     }
   },
   created() {
