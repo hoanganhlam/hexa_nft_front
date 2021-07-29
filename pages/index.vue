@@ -225,9 +225,9 @@
           </div>
         </div>
         <div class="text-center">
-          <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4">Partners & Investors</h2>
-          <div class="my-8 md:my-16 grid grid-cols-2 md:grid-cols-6 gap-6">
-            <img v-for="i in partners" :key="i" :src="`/partner/${i}.png`" :alt="i">
+          <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4">Backed by</h2>
+          <div class="my-8 md:my-16 grid grid-cols-2 md:grid-cols-4 gap-16 text-center items-center justify-center">
+            <img class="mx-auto" v-for="i in partners" :key="i" :src="`/partner/${i}.png`" :alt="i">
           </div>
         </div>
       </div>
@@ -477,26 +477,26 @@ export default {
       dataset: [],
       fetching: false,
       partners: [
-        "1010",
-        "barmy",
-        "bsc-new",
-        "BSCdaily",
+        "polygon",
         "cmc",
-        "cointv",
+        "BSCdaily",
+        "bsc-new",
+        "barmy",
+        "tribeone",
+        "launchzone",
         "danchoicoin",
         "DCI",
+        "icetea_lab",
+        "TAG",
+        "1010",
+        "kingman",
         "exntc",
         "frontier",
-        "gum",
-        "icetea_lab",
-        "kingman",
-        "launchzone",
-        "mayor",
         "OIG",
-        "polygon",
+        "mayor",
+        "cointv",
         "red-kite",
-        "TAG",
-        "tribeone"
+        "gum",
       ]
     }
   },
