@@ -191,8 +191,8 @@
                   </div>
                 </div>
                 <div>
-                  <h3 class="text-gray-800 font-bold text-lg">{{ item.name }}</h3>
-                  <h4 class="text-gray-700 text-sm mb-2">{{ item.title }}</h4>
+                  <h3 class="text-gray-800 text-center font-bold text-lg">{{ item.name }}</h3>
+                  <h4 class="text-gray-700 text-center text-sm mb-2">{{ item.title }}</h4>
                   <div class="text-gray-600 text-xs" v-html="item.bio"></div>
                 </div>
               </div>
@@ -216,8 +216,8 @@
                   </div>
                 </div>
                 <div>
-                  <h3 class="text-gray-800 font-bold text-lg">{{ item.name }}</h3>
-                  <h4 class="text-gray-700 text-sm mb-2">{{ item.title }}</h4>
+                  <h3 class="text-gray-800 text-center font-bold text-lg">{{ item.name }}</h3>
+                  <h4 class="text-gray-700 text-center text-sm mb-2">{{ item.title }}</h4>
                   <div class="text-gray-600 text-xs" v-html="item.bio"></div>
                 </div>
               </div>
@@ -442,11 +442,7 @@ export default {
           // }
         ],
         advisors: [
-          {
-            name: "Nam Nguyen",
-            title: "COO Gourmet Galaxy, CEO Tag Ventures",
-            bio: "Nam Nguyen is CEO of TAG Vietnam and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
-          },
+
           // {
           //   name: "Johnny Tri Dung",
           //   title: "Chief Business Officer at Kardiachain",
@@ -461,6 +457,11 @@ export default {
             name: "Thanh Dao",
             title: "CEO & Founder of EzDefi",
             bio: "Mr. Thanh has been involving in cryptocurrencies since 2016 as a Bitcoin miner and investor. He got his MBA from UWIC and worked as a manager in Vingroup and later as the CTO of Nexty ( a public chain project). In 2017, Thanh founded ezDeFi and launched various products. Thanh is currently CEO of ezDeFi and the project is reaching constant new growth."
+          },
+          {
+            name: "Nam Nguyen",
+            title: "COO Gourmet Galaxy, CEO Tag Ventures",
+            bio: "Nam Nguyen is CEO of TAG Vietnam and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
           },
         ],
         inverters: [
