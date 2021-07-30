@@ -77,6 +77,11 @@ export default {
           desc: "Mr. Thi has years of expertise in the blockchain space. His most successful initiative is PolkaFoundry, which was launched in 2018 to make the benefits of blockchain more accessible to the general public. He worked as a Software Engineer, then as a Solution Architect before being elevated to Director at FPT Corp. Following his departure from FPT, he worked as a Product Manager at Kyber Network, one of Asia’s most well-known blockchain projects initiatives. He advises us on the company growth strategy and roadmap."
         },
         {
+          title: "Mr. Kamran Iqbal",
+          subtitle: "Co-Founder and COO of BSC News.",
+          desc: "As our investor, advisor, and communication partner, he will assist our project on community development and brand marketing. Furthermore, he will connect us with his extensive network of partners who can support the development of our project."
+        },
+        {
           title: "Mr. Thanh Dao",
           subtitle: "Advisor",
           desc: "Mr. Thanh has been involving in cryptocurrencies since 2016 as a Bitcoin miner and investor. He got his MBA from UWIC and worked as a manager in Vingroup and later as the CTO of Nexty (a public chain project). In 2017, Thanh founded ezDeFi and launched various products. Thanh is currently CEO of ezDeFi and the project is reaching constant new growth."

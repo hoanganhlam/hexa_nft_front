@@ -54,14 +54,12 @@
                 Telegram
               </a>
             </li>
-
             <li class="flex justify-center md:justify-start">
               <icon vb="30" class="md" name="tw" fill="#000"/>
               <a href="https://twitter.com/StepHeroNFTs" target="_blank" class="text-gray-300 mb-2">
                 Twitter
               </a>
             </li>
-
             <li class="flex justify-center md:justify-start">
               <icon vb="90" class="md" name="me" fill="#000"/>
               <a href="https://stephero.medium.com/" target="_blank" class="text-gray-300 mb-2">

@@ -48,7 +48,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <h4 class="mb-2 font-bold text-xl">$0.08</h4>
+                <h4 class="mb-2 font-bold text-xl">$0.1</h4>
                 <span class="text-gray-400">Public Sale Price</span>
               </div>
             </div>
@@ -144,25 +144,31 @@ import SVGIcon from "@/components/Icon.vue";
 
 export default {
   name: "PageToken",
+  head() {
+    return {
+      title: "Tokenomics - StepHero.io"
+    }
+  },
   components: {icon: SVGIcon},
   data() {
     return {
       usages: [
-        {l: 'Development', v: 35, c: '#EF466F'},
-        {l: 'Provide liquidity to exchanges', v: 35, c: '#3772FF'},
+        {l: 'Product Development', v: 35, c: '#EF466F'},
+        {l: 'Liquidity & Exchanges', v: 35, c: '#3772FF'},
         {l: 'Operations', v: 25, c: '#9757D7'},
-        {l: 'Legal and Accountancy', v: 5, c: '#45B26B'}
+        {l: 'Legal & Accountancy', v: 5, c: '#45B26B'}
         ],
       distributions: [
-        {l: 'Foundation Reserve', v: 10, c: '#FFC848'},
-        {l: 'Seed', v: 5, c: '#9757D7'},
-        {l: 'Private', v: 15, c: '#45B26B'},
-        {l: 'Public', v: 2.5, c: '#EF466F'},
-        {l: 'Liquidity', v: 20, c: '#3772fe'},
-        {l: 'Marketing', v: 15, c: '#1642ac'},
-        {l: 'Game Incentives', v: 17.5, c: '#ac188c'},
-        {l: 'Team', v: 10, c: '#78c436'},
-        {l: 'Advisors', v: 5, c: '#56440d'},
+        {l: 'Seed Sale', v: 6.25, c: '#FFC848'},
+        {l: 'Private Sale', v: 15.00, c: '#9757D7'},
+        {l: 'Private Sale 2', v: 4.00, c: '#45B26B'},
+        {l: 'Public Sale', v: 2.50, c: '#EF466F'},
+        {l: 'Team', v: 10.00, c: '#3772fe'},
+        {l: 'Advisor', v: 5.00, c: '#1642ac'},
+        {l: 'Liquidity', v: 20.00, c: '#ac188c'},
+        {l: 'Game Incentives', v: 15.00, c: '#78c436'},
+        {l: 'Marketing', v: 15.00, c: '#56440d'},
+        {l: 'Development', v: 15.00, c: '#52340d'},
       ],
     }
   }

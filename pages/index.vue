@@ -1,23 +1,44 @@
 <template>
   <div>
-    <section id="s1" class="h-full md:h-auto bg-gray-50 dark:bg-gray-900 relative">
-      <img class="hidden md:block w-full" src="/Step_Hero_Game_Play.jpeg" alt="Step Hero Banner">
-      <div class="md:hidden container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
-        <div class="flex-1 flex md:-mx-4 md:items-end justify-center">
-          <div class="px-4 py-12 md:py-6 md:text-center">
-            <h1 class="md:hidden mb-4 font-bold text-4xl">The lucrative NFT fantasy-themed RPG game on BSC and Polygon</h1>
-<!--            <p class="mb-12 text-2xl"></p>-->
-            <div v-if="false" class="flex flex-col justify-center md:flex-row -mx-2">
-              <div class="mx-2">
-                <a href="#about" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">About us</a>
+    <section id="s1" class="bg-gray-50 dark:bg-gray-900 relative">
+      <img class="hidden md:block w-full" src="/Step_Hero_Game_Play_blank.jpg" alt="Step Hero Banner">
+      <div class="absolute top-0 left-0 right-0 bottom-0">
+        <div class="container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
+          <div class="flex-1 flex md:-mx-4 md:items-center md:w-1/2">
+            <div class="px-4 py-12 md:py-6">
+              <div class="md:mb-4 mb-2 font-bold text-2xl md:text-4xl">The lucrative</div>
+              <div class="md:mb-4 mb-2 font-bold text-2xl md:text-4xl">NFT fantasy-themed</div>
+              <div class="md:mb-4 mb-2 font-bold text-2xl md:text-4xl">RPG game</div>
+              <div class="md:mb-4 mb-2 font-bold text-2xl md:text-4xl">on BSC and Polygon</div>
+              <div class="flex flex-col md:flex-row -mx-2 mt-8">
+                <div class="mx-2">
+                  <a href="https://coinmarketcap.com/currencies/step-hero/airdrop/" class="btn-secondary justify-center w-full md:w-auto mb-4 md:mb-0">Airdrop</a>
+                </div>
+                <div v-if="false" class="mx-2">
+                  <a target="_blank" href="#"
+                     class="btn-secondary justify-center mb-4 md:mb-0">What is HERO</a>
+                </div>
+                <div v-if="false" class="mx-2">
+                  <a target="_blank" href="https://whitepaper.stephero.io/" class="btn-secondary justify-center">White
+                    Paper</a>
+                </div>
               </div>
-              <div class="mx-2">
-                <a target="_blank" href="#"
-                   class="btn-secondary justify-center mb-4 md:mb-0">What is HERO</a>
-              </div>
-              <div class="mx-2">
-                <a target="_blank" href="https://whitepaper.stephero.io/" class="btn-secondary justify-center">White
-                  Paper</a>
+              <div class="flex space-x-2 mt-2 md:mt-8">
+                <a href="https://twitter.com/StepHeroNFTs" target="_blank">
+                  <icon vb="30" class="md" name="tw" fill="#000"/>
+                </a>
+                <a href="https://t.me/stephero_chat" target="_blank">
+                  <icon vb="90" class="md" name="tl" fill="#000"/>
+                </a>
+                <a href="https://stephero.medium.com/" target="_blank">
+                  <icon vb="90" class="md" name="me" fill="#000"/>
+                </a>
+                <a href="https://www.facebook.com/StepHeroNFTs" target="_blank">
+                  <icon vb="35" class="md" name="fb" fill="#000"/>
+                </a>
+                <a href="https://www.reddit.com/user/StepHeroNFTs" target="_blank">
+                  <icon vb="1200" class="md" name="re" fill="#000"/>
+                </a>
               </div>
             </div>
           </div>
@@ -201,10 +222,10 @@
         </div>
         <div class="mb-20 text-center">
           <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4 mb-16">Advisor</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mx-auto">
-            <div v-for="(item, i) in s7.advisors" :key="i" class="relative">
+          <div class="flex -mx-4 justify-center flex-wrap mx-auto justify-center">
+            <div v-for="(item, i) in s7.advisors" :key="i" class="relative md:w-1/3 p-4">
               <img src="/about-bg.png" alt="BG">
-              <div class="absolute -top-8 left-0 right-0 bottom-0 flex flex-col py-2 px-12 h-full">
+              <div class="absolute -top-10 left-0 right-0 bottom-0 flex flex-col py-2 px-16 h-full">
                 <div class="flex justify-center">
                   <div class="w-1/4">
                     <div class="rounded-1by1">
@@ -217,7 +238,7 @@
                 </div>
                 <div>
                   <h3 class="text-gray-800 text-center font-bold text-lg">{{ item.name }}</h3>
-                  <h4 class="text-gray-700 text-center text-sm mb-2">{{ item.title }}</h4>
+                  <h4 class="text-gray-700 text-center text-sm">{{ item.title }}</h4>
                   <div class="text-gray-600 text-xs" v-html="item.bio"></div>
                 </div>
               </div>
@@ -226,8 +247,10 @@
         </div>
         <div class="text-center">
           <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4">Backed by</h2>
-          <div class="my-8 md:my-16 grid grid-cols-2 md:grid-cols-4 gap-16 text-center items-center justify-center">
-            <img class="mx-auto" v-for="i in partners" :key="i" :src="`/partner/${i}.png`" :alt="i">
+          <div class="flex -mx-4 md:-mx-8 items-center justify-center flex-wrap">
+            <div v-for="i in partners" :key="i" class="p-4 w-1/2 md:w-1/4">
+              <img class="mx-auto" :src="`/partner/${i}.png`" :alt="i">
+            </div>
           </div>
         </div>
       </div>
@@ -461,6 +484,11 @@ export default {
             bio: "Mr. Thanh has been involving in cryptocurrencies since 2016 as a Bitcoin miner and investor. He got his MBA from UWIC and worked as a manager in Vingroup and later as the CTO of Nexty ( a public chain project). In 2017, Thanh founded ezDeFi and launched various products. Thanh is currently CEO of ezDeFi and the project is reaching constant new growth."
           },
           {
+            name: "Kamran Iqbal",
+            title: "Co-Founder and COO of BSC News.",
+            bio: "As our investor, advisor, and communication partner, he will assist our project on community development and brand marketing. Furthermore, he will connect us with his extensive network of partners who can support the development of our project."
+          },
+          {
             name: "Nam Nguyen",
             title: "COO Gourmet Galaxy, CEO Tag Ventures",
             bio: "Nam Nguyen is CEO of TAG Vietnam and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
@@ -477,26 +505,25 @@ export default {
       dataset: [],
       fetching: false,
       partners: [
-        "polygon",
+        "icetea_lab",
+        "red-kite",
+        "mayor",
         "cmc",
-        "BSCdaily",
-        "bsc-new",
-        "barmy",
-        "tribeone",
+        "polygon",
         "launchzone",
+        "barmy",
+        "bsc-new",
+        "BSCdaily",
         "danchoicoin",
         "DCI",
-        "icetea_lab",
-        "TAG",
         "1010",
+        "av",
         "kingman",
-        "exntc",
-        "frontier",
         "OIG",
-        "mayor",
-        "cointv",
-        "red-kite",
+        "frontier",
+        "exntc",
         "gum",
+        "TAG"
       ]
     }
   },
@@ -515,13 +542,20 @@ export default {
   background-image: url("/bg_mobile.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-y: 56px;
+  height: 87vh;
+}
+
+#s1 .btn-secondary {
+  padding: .75rem 2.5rem;
 }
 @media (min-width: 768px) {
   #s1 {
     background-image: url("/bg.jpg");
     background-size: cover;
+    background-position: center;
     margin-top: 3.5rem;
+    height: 100vh;
   }
 }
 
