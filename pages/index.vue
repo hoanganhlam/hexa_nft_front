@@ -1,7 +1,7 @@
 <template>
   <div>
     <section id="s1" class="bg-gray-50 dark:bg-gray-900 relative">
-      <img class="hidden md:block w-full" src="/Step_Hero_Game_Play_blank.jpg" alt="Step Hero Banner">
+      <img class="hidden md:block h-full object-cover" src="/Step_Hero_Game_Play_blank.jpg" alt="Step Hero Banner">
       <div class="absolute top-0 left-0 right-0 bottom-0">
         <div class="container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
           <div class="flex-1 flex md:-mx-4 md:items-center md:w-1/2">
@@ -540,10 +540,11 @@ export default {
 <style>
 #s1 {
   background-image: url("/bg_mobile.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position-y: 56px;
-  height: 87vh;
+  background-position-x: center;
+  height: 100vh;
 }
 
 #s1 .btn-secondary {
