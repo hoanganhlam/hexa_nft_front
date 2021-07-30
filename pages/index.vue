@@ -506,7 +506,7 @@ export default {
         "red-kite",
         "mayor",
         "cmc",
-        "polygon",
+        // "polygon",
         "launchzone",
         "barmy",
         "bsc-new",
@@ -517,7 +517,7 @@ export default {
         "av",
         "kingman",
         "OIG",
-        "frontier",
+        // "frontier",
         "exntc",
         "gum",
         "TAG"
