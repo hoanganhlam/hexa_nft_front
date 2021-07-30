@@ -6,13 +6,10 @@
         <div class="container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
           <div class="flex-1 flex md:-mx-4 md:items-center md:w-1/2">
             <div class="px-4 py-12 md:py-6">
-              <div class="md:mb-4 mb-2 font-bold text-2xl md:text-4xl">The lucrative</div>
-              <div class="md:mb-4 mb-2 font-bold text-2xl md:text-4xl">NFT fantasy-themed</div>
-              <div class="md:mb-4 mb-2 font-bold text-2xl md:text-4xl">RPG game</div>
-              <div class="md:mb-4 mb-2 font-bold text-2xl md:text-4xl">on BSC and Polygon</div>
-              <div class="flex flex-col md:flex-row -mx-2 mt-8">
+              <h1 class="md:mb-4 mb-2 font-bold text-3xl md:text-4xl text-center md:text-left">The lucrative NFT fantasy-themed RPG Game on BSC and Polygon</h1>
+              <div class="flex md:justify-start justify-center -mx-2 mt-8">
                 <div class="mx-2">
-                  <a href="https://coinmarketcap.com/currencies/step-hero/airdrop/" class="btn-secondary justify-center w-full md:w-auto mb-4 md:mb-0">Airdrop</a>
+                  <a href="https://coinmarketcap.com/currencies/step-hero/airdrop/" class="btn-secondary justify-center md:w-auto mb-4 md:mb-0">Airdrop</a>
                 </div>
                 <div v-if="false" class="mx-2">
                   <a target="_blank" href="#"
@@ -23,7 +20,7 @@
                     Paper</a>
                 </div>
               </div>
-              <div class="flex space-x-2 mt-2 md:mt-8">
+              <div class="flex md:justify-start justify-center space-x-2 mt-2 md:mt-8">
                 <a href="https://twitter.com/StepHeroNFTs" target="_blank">
                   <icon vb="30" class="md" name="tw" fill="#000"/>
                 </a>
@@ -549,6 +546,7 @@ export default {
 
 #s1 .btn-secondary {
   padding: .75rem 2.5rem;
+  display: inline-flex;
 }
 @media (min-width: 768px) {
   #s1 {
