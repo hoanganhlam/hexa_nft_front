@@ -212,7 +212,7 @@
         <h4 class="text-red-600 uppercase text-center mb-8">About us</h4>
         <div class="mb-20">
           <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4 mb-16">Our team</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div v-for="(item, i) in s7.teams" :key="i" class="relative">
               <img src="/about-bg.png" alt="About">
               <div class="absolute -top-8 left-0 right-0 bottom-0 flex flex-col py-2 px-12 h-full">
@@ -233,6 +233,14 @@
                   <div class="text-gray-600 text-xs" v-html="item.bio"></div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <img src="/assets/Team/10.png" alt="">
+            </div>
+            <div>
+              <img src="/assets/Team/30.png" alt="">
             </div>
           </div>
         </div>
