@@ -532,8 +532,8 @@ export default {
       dataset: [],
       fetching: false,
       partners: [
-        "icetea_lab",
         "red-kite",
+        "poolz",
         "cmc",
         "bsc-new",
         "BSCdaily",
@@ -548,11 +548,12 @@ export default {
         "gum",
       ],
       vcs: [
+        "icetea_lab",
         "mayor",
         "DCI",
-        "OIG",
         "1010",
         "av",
+        "OIG",
         "exntc",
       ]
     }
