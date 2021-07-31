@@ -6,10 +6,12 @@
         <div class="container pt-20 md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
           <div class="flex-1 flex md:-mx-4 md:items-center md:w-1/2">
             <div class="px-4 py-12 md:py-6">
-              <h1 class="md:mb-4 mb-2 font-bold text-3xl md:text-4xl text-center md:text-left">The lucrative NFT fantasy-themed RPG Game on BSC and Polygon</h1>
+              <h1 class="md:mb-4 mb-2 font-bold text-3xl md:text-4xl text-center md:text-left">The lucrative NFT
+                fantasy-themed RPG Game on BSC and Polygon</h1>
               <div class="flex md:justify-start justify-center -mx-2 mt-8">
                 <div class="mx-2">
-                  <a href="https://coinmarketcap.com/currencies/step-hero/airdrop/" class="btn-secondary justify-center md:w-auto mb-4 md:mb-0">Airdrop</a>
+                  <a href="https://coinmarketcap.com/currencies/step-hero/airdrop/"
+                     class="btn-secondary justify-center md:w-auto mb-4 md:mb-0">Airdrop</a>
                 </div>
                 <div v-if="false" class="mx-2">
                   <a target="_blank" href="#"
@@ -62,7 +64,10 @@
         <div class="container mx-auto xs text-center mb-24">
           <span class="text-red-600 uppercase">Project</span>
           <h2 class="text-5xl mt-4 mb-8 font-medium">{{ s3.title }}</h2>
-          <p class="text-gray-300">Step Hero ecosystem is the perfect combination of NFT gaming and DeFi that enables users to have fun and earn profit simultaneously. The comprehensive ecosystem comprises Step Hero RPG game, Heroes Farming, and NFT Marketplace. More than a game, Step Hero also has a strong community helping players on investing activites to earn money from game.</p>
+          <p class="text-gray-300">Step Hero ecosystem is the perfect combination of NFT gaming and DeFi that enables
+            users to have fun and earn profit simultaneously. The comprehensive ecosystem comprises Step Hero RPG game,
+            Heroes Farming, and NFT Marketplace. More than a game, Step Hero also has a strong community helping players
+            on investing activites to earn money from game.</p>
         </div>
         <div class="flex flex-wrap -mx-4">
           <div v-for="(item, i) in s3.arr" class="px-4 mb-4 md:mb-8 md:w-1/3 relative">
@@ -82,17 +87,25 @@
       <div class="md:pt-0 px-6 md:px-0 flex flex-col mx-auto">
         <div class="flex-1 flex flex-col md:flex-row md:items-center justify-start">
           <div class="md:w-1/2 relative">
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/577897292?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SH-gameplot-final.mp4"></iframe></div>
-<!--            <img src="/step_hero_game_play.png" alt="Game">-->
-<!--            <div class="absolute top-0 right-0 left-0 bottom-0 flex flex-wrap items-center justify-center">-->
-<!--              <img class="shadow-lg cursor-pointer w-16" src="/play.png" alt="Play Button" @click="showing = true">-->
-<!--            </div>-->
+            <div style="padding:56.25% 0 0 0;position:relative;">
+              <iframe
+                src="https://player.vimeo.com/video/577897292?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" title="SH-gameplot-final.mp4"></iframe>
+            </div>
+            <!--            <img src="/step_hero_game_play.png" alt="Game">-->
+            <!--            <div class="absolute top-0 right-0 left-0 bottom-0 flex flex-wrap items-center justify-center">-->
+            <!--              <img class="shadow-lg cursor-pointer w-16" src="/play.png" alt="Play Button" @click="showing = true">-->
+            <!--            </div>-->
           </div>
           <div class="md:w-1/2">
             <div class="lg:w-2/3 p-4 md:p-16">
               <span class="text-red-600 uppercase">Gameplay</span>
               <h2 class="text-5xl font-medium mt-4 mb-6">Save the world</h2>
-              <p class="my-4 text-gray-300">The Step Hero game's plot hinges on the post-apocalyptic war between the army of Shadows led by Lucifer - The Demon Lord and the Heroes led by archangel Gabriel. The players will play the Hero roles. Your missions are fighting against the villains in battles while buffing your energy by collecting in-game items, earning money (in STEP coins), and upgrading your characters.</p>
+              <p class="my-4 text-gray-300">The Step Hero game's plot hinges on the post-apocalyptic war between the
+                army of Shadows led by Lucifer - The Demon Lord and the Heroes led by archangel Gabriel. The players
+                will play the Hero roles. Your missions are fighting against the villains in battles while buffing your
+                energy by collecting in-game items, earning money (in STEP coins), and upgrading your characters.</p>
               <n-link to="/battle" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">Battle</n-link>
             </div>
           </div>
@@ -106,7 +119,9 @@
             <div class="p-4 md:p-6">
               <span class="text-red-600 uppercase">Marketplace</span>
               <h2 class="text-5xl font-medium mt-4 mb-6">Cross-chain NFT platform</h2>
-              <p class="my-8 text-lg text-gray-300">Step Hero NFTs Marketplace is where you create, sell, and buy NFTs digital content. Moreover, you can launch NFT auctions, earn commissions from affiliate programs, and build your favorite NFT collection.
+              <p class="my-8 text-lg text-gray-300">Step Hero NFTs Marketplace is where you create, sell, and buy NFTs
+                digital content. Moreover, you can launch NFT auctions, earn commissions from affiliate programs, and
+                build your favorite NFT collection.
               </p>
               <a href="https://market.stephero.io/" class="btn-primary justify-center w-full md:w-auto mb-4 md:mb-0">Visit</a>
             </div>
@@ -129,7 +144,8 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
             <div class="cursor-pointer">
               <video muted loop autoplay playsinline :id="`video_0`" class="rounded-tl rounded-tr">
-                <source src="https://stephero-nft.s3.ap-southeast-1.amazonaws.com/heros/step_hero_king_arthur/step_hero_king_arthur_lv1.mp4">
+                <source
+                  src="https://stephero-nft.s3.ap-southeast-1.amazonaws.com/heros/step_hero_king_arthur/step_hero_king_arthur_lv1.mp4">
               </video>
               <div class="p-4 flex justify-center">
                 <n-link to="/characters/genesis" class="btn-secondary sm">Heroes</n-link>
@@ -137,7 +153,8 @@
             </div>
             <div class="cursor-pointer">
               <video muted loop autoplay playsinline :id="`video_1`" class="rounded-tl rounded-tr">
-                <source src="https://stephero-nft.s3.ap-southeast-1.amazonaws.com/heros/step_hero_lucifer/step_hero_lucifer.mp4">
+                <source
+                  src="https://stephero-nft.s3.ap-southeast-1.amazonaws.com/heros/step_hero_lucifer/step_hero_lucifer.mp4">
               </video>
               <div class="p-4 flex justify-center">
                 <n-link to="/characters/lp_genesis" class="btn-secondary sm">Heroes LP</n-link>
@@ -155,7 +172,8 @@
         </div>
         <div class="mb-6">
           <div class="mb-3 pb-3 border-b border-gray-700 cursor-pointer" v-for="(item, i) in s5.arr" :key="i">
-            <div class="py-4 py-3 space-x-4 flex items-center justify-between w-full cursor-pointer" @click="item.active = !item.active">
+            <div class="py-4 py-3 space-x-4 flex items-center justify-between w-full cursor-pointer"
+                 @click="item.active = !item.active">
               <img :src="`/assets/Icons/Homepage/icon-${i}.png`" :alt="item.title">
               <span class="flex-1 font-bold">{{ item.title }}</span>
               <span class="rounded-full h-7 bg-red-600 shadow-sm shadow-inner p-1.5">
@@ -201,7 +219,8 @@
                 <div class="flex justify-center">
                   <div class="w-1/4">
                     <div class="rounded-1by1">
-                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.JPG`" :alt="item.name">
+                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)"
+                           :src="`/assets/Team/${item.name}.JPG`" :alt="item.name">
                     </div>
                     <a v-if="item.link" :href="item.link" target="_blank">
                       <icon name="linkedin"></icon>
@@ -226,7 +245,8 @@
                 <div class="flex justify-center">
                   <div class="w-1/4">
                     <div class="rounded-1by1">
-                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)" :src="`/assets/Team/${item.name}.png`" :alt="item.title">
+                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)"
+                           :src="`/assets/Team/${item.name}.png`" :alt="item.title">
                     </div>
                     <a v-if="item.link" :href="item.link" target="_blank">
                       <icon name="linkedin"></icon>
@@ -242,14 +262,23 @@
             </div>
           </div>
         </div>
+        <div class="mb-20 text-center">
+          <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4">VCs & Investors</h2>
+          <div class="flex -mx-4 md:-mx-8 items-center justify-center flex-wrap">
+            <div v-for="i in vcs" :key="i" class="p-4 w-1/2 md:w-1/4">
+              <img class="mx-auto" :src="`/partner/${i}.png`" :alt="i">
+            </div>
+          </div>
+        </div>
         <div class="text-center">
-          <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4">Backed by</h2>
+          <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4">Partners</h2>
           <div class="flex -mx-4 md:-mx-8 items-center justify-center flex-wrap">
             <div v-for="i in partners" :key="i" class="p-4 w-1/2 md:w-1/4">
               <img class="mx-auto" :src="`/partner/${i}.png`" :alt="i">
             </div>
           </div>
         </div>
+
       </div>
     </section>
     <transition name="fade">
@@ -261,7 +290,8 @@
             </div>
           </div>
           <div>
-            <iframe src="https://player.vimeo.com/video/577530134" width="100%" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/577530134" width="100%" height="480" frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -427,7 +457,7 @@ export default {
               "<p>- 10 years of experience in e-commerce industry</p>\n" +
               "<p>- Founder & CEO at Ligovi Ecom, CMO at Phat Media</p>\n" +
               "<p>- App Mobile Development Specialist</p>",
-            link:"https://www.linkedin.com/in/huu-vu-quoc-766405213/"
+            link: "https://www.linkedin.com/in/huu-vu-quoc-766405213/"
           },
           {
             name: "Lilly Nguyen",
@@ -504,23 +534,26 @@ export default {
       partners: [
         "icetea_lab",
         "red-kite",
-        "mayor",
         "cmc",
-        // "polygon",
-        "launchzone",
-        "barmy",
         "bsc-new",
         "BSCdaily",
+        "launchzone",
+        "polygon",
+        "barmy",
+        "frontier",
         "danchoicoin",
+        "altcoin",
+        "kingsman",
+        "TAG",
+        "gum",
+      ],
+      vcs: [
+        "mayor",
         "DCI",
+        "OIG",
         "1010",
         "av",
-        "kingman",
-        "OIG",
-        // "frontier",
         "exntc",
-        "gum",
-        "TAG"
       ]
     }
   },
@@ -548,6 +581,7 @@ export default {
   padding: .75rem 2.5rem;
   display: inline-flex;
 }
+
 @media (min-width: 768px) {
   #s1 {
     background-image: url("/bg.jpg");
