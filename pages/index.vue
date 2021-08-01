@@ -563,7 +563,8 @@ export default {
         "av",
         "OIG",
         "exntc",
-        "choiventures"
+        "choiventures",
+        "bullperks"
       ]
     }
   },
