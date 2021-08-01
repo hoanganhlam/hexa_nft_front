@@ -523,11 +523,11 @@ export default {
             title: "Co-Founder and COO of BSC News.",
             bio: "As our investor, advisor, and communication partner, he will assist our project on community development and brand marketing. Furthermore, he will connect us with his extensive network of partners who can support the development of our project."
           },
-          {
-            name: "Nam Nguyen",
-            title: "COO Gourmet Galaxy, CEO Tag Ventures",
-            bio: "Nam Nguyen is CEO of TAG Vietnam and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
-          },
+          // {
+          //   name: "Nam Nguyen",
+          //   title: "COO Gourmet Galaxy, CEO Tag Ventures",
+          //   bio: "Nam Nguyen is CEO of TAG Vietnam and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
+          // },
         ],
         inverters: [
           {
@@ -552,8 +552,8 @@ export default {
         "danchoicoin",
         "altcoin",
         "kingsman",
-        "TAG",
-        "gum",
+        // "TAG",
+        // "gum",
         "nftstarter"
       ],
       vcs: [
