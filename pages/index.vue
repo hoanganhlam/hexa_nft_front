@@ -554,6 +554,7 @@ export default {
         "kingsman",
         "TAG",
         "gum",
+        "nftstarter"
       ],
       vcs: [
         "icetea_lab",
