@@ -38,6 +38,9 @@
                 <a href="https://www.reddit.com/user/StepHeroNFTs" target="_blank">
                   <icon vb="1200" class="md" name="re" fill="#000"/>
                 </a>
+                <a href="https://www.youtube.com/channel/UCbpnFeAJ4Kv0iZNV6FLVDLA" target="_blank">
+                  <icon class="md" name="yt" fill="#000"/>
+                </a>
               </div>
             </div>
           </div>

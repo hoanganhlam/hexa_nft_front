@@ -41,35 +41,41 @@
         <div class="mt-2 mb-8 md:mb-2">
           <div class="font-bold mb-4">Social</div>
           <ul>
-            <li class="flex justify-center md:justify-start">
+            <li class="flex items-center justify-center md:justify-start">
               <icon vb="35" class="md" name="fb" fill="#000"/>
               <a href="https://www.facebook.com/StepHeroNFTs" target="_blank"
                  class="text-gray-300 mb-2">
                 Facebook
               </a>
             </li>
-            <li class="flex justify-center md:justify-start">
+            <li class="flex items-center justify-center md:justify-start">
               <icon vb="90" class="md" name="tl" fill="#000"/>
               <a href="https://t.me/stephero_chat" target="_blank" class="text-gray-300 mb-2">
                 Telegram
               </a>
             </li>
-            <li class="flex justify-center md:justify-start">
+            <li class="flex items-center justify-center md:justify-start">
               <icon vb="30" class="md" name="tw" fill="#000"/>
               <a href="https://twitter.com/StepHeroNFTs" target="_blank" class="text-gray-300 mb-2">
                 Twitter
               </a>
             </li>
-            <li class="flex justify-center md:justify-start">
+            <li class="flex items-center justify-center md:justify-start">
               <icon vb="90" class="md" name="me" fill="#000"/>
               <a href="https://stephero.medium.com/" target="_blank" class="text-gray-300 mb-2">
                 Medium
               </a>
             </li>
-            <li class="flex justify-center md:justify-start">
+            <li class="flex items-center justify-center md:justify-start">
               <icon vb="1200" class="md" name="re" fill="#000"/>
               <a href="https://www.reddit.com/user/StepHeroNFTs" target="_blank" class="text-gray-300 mb-2">
                 Reddit
+              </a>
+            </li>
+            <li class="flex items-center justify-center md:justify-start">
+              <icon class="md" name="yt" fill="#000"/>
+              <a href="https://www.youtube.com/channel/UCbpnFeAJ4Kv0iZNV6FLVDLA" target="_blank" class="text-gray-300">
+                Youtube
               </a>
             </li>
           </ul>
