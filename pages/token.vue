@@ -162,13 +162,13 @@ export default {
         {l: 'Seed Sale', v: 6.25, c: '#FFC848'},
         {l: 'Private Sale', v: 15.00, c: '#9757D7'},
         {l: 'Private Sale 2', v: 4.00, c: '#45B26B'},
-        {l: 'Public Sale', v: 2, c: '#EF466F'},
+        {l: 'Public Sale', v: 2.4, c: '#EF466F'},
         {l: 'Team', v: 10.00, c: '#3772fe'},
         {l: 'Advisor', v: 5.00, c: '#1642ac'},
         {l: 'Liquidity', v: 20.00, c: '#ac188c'},
-        {l: 'Game Incentives', v: 15.50, c: '#78c436'},
+        {l: 'Game Incentives', v: 14.50, c: '#78c436'},
         {l: 'Marketing', v: 15.00, c: '#56440d'},
-        {l: 'Development', v: 15.00, c: '#52340d'},
+        {l: 'Development', v: 7.85, c: '#52340d'},
       ],
     }
   }
