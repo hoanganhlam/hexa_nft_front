@@ -10,8 +10,8 @@
                 fantasy-themed RPG Game on BSC and Polygon</h1>
               <div class="flex md:justify-start justify-center -mx-2 mt-8">
                 <div class="mx-2">
-                  <a href="https://coinmarketcap.com/currencies/step-hero/airdrop/"
-                     class="btn-secondary justify-center md:w-auto mb-4 md:mb-0">Airdrop</a>
+                  <a href="https://stephero.medium.com/instructions-on-joining-step-heros-ido-on-launchzone-c526ebf6f8c6"
+                     class="btn-secondary justify-center md:w-auto mb-4 md:mb-0">whitelist IDO</a>
                 </div>
                 <div v-if="false" class="mx-2">
                   <a target="_blank" href="#"
