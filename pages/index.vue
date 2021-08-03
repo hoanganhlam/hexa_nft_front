@@ -465,10 +465,10 @@ export default {
             name: "Garbriel Vu",
             title: "Chief Executive Officer",
             bio: "<b>Power: operation & cost optimization </b>\n" +
-              "<p>- 10 years of experience in e-commerce industry</p>\n" +
-              "<p>- Founder & CEO at Ligovi Ecom, CMO at Phat Media</p>\n" +
-              "<p>- App Mobile Development Specialist</p>",
-            link: "https://www.linkedin.com/in/huu-vu-quoc-766405213/"
+              "<p>- More than 10 years of experiences in e-commerce industry, being a partner of world-class ecommerce platforms: Amazon, Ebay, Facebook...etc in which, 8 years of experiences in mobile apps development</p>\n" +
+              "<p>- Founder & CEO at Ligovi Ecom, CMO at Phat Viet Nam</p>\n" +
+              "<p>- Exceptional know-how in community development and omni channel marketing</p>",
+            link: "https://www.linkedin.com/in/garbriel-vu-766405213/"
           },
           {
             name: "Lilly Nguyen",
