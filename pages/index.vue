@@ -560,7 +560,7 @@ export default {
         "danchoicoin",
         "altcoin",
         "kingsman",
-        // "TAG",
+        "TAG",
         // "gum",
         "nftstarter"
       ],
