@@ -11,7 +11,7 @@
               <div class="flex md:justify-start justify-center -mx-2 mt-8">
                 <div class="mx-2">
                   <a href="https://stephero.medium.com/instructions-on-joining-step-heros-ido-on-launchzone-c526ebf6f8c6"
-                     class="btn-secondary justify-center md:w-auto mb-4 md:mb-0">whitelist IDO</a>
+                     class="btn-secondary justify-center md:w-auto mb-4 md:mb-0">Whitelist IDO</a>
                 </div>
                 <div v-if="false" class="mx-2">
                   <a target="_blank" href="#"
