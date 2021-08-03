@@ -66,11 +66,11 @@ export default {
         }
       ],
       advisors: [
-        {
-          title: "Mr. Nam Nguyen",
-          subtitle: "Advisor",
-          desc: "Nam Nguyen is the CEO of Tagchain.io and the Founder of TAG Ventures, one of the top venture capital firms in South East Asia. He is also the CEO of Gourmet Galaxy (GUM), a famous Yield Farming platform. Mr. Nam advises us on system operation and new market entry strategy, which assists us in expanding market share and achieving sustainable development."
-        },
+        // {
+        //   title: "Mr. Nam Nguyen",
+        //   subtitle: "Advisor",
+        //   desc: "Nam Nguyen is the CEO of Tagchain.io and the Founder of TAG Ventures, one of the top venture capital firms in South East Asia. He is also the CEO of Gourmet Galaxy (GUM), a famous Yield Farming platform. Mr. Nam advises us on system operation and new market entry strategy, which assists us in expanding market share and achieving sustainable development."
+        // },
         {
           title: "Mr. Thi Truong",
           subtitle: "Advisor",
@@ -85,7 +85,12 @@ export default {
           title: "Mr. Thanh Dao",
           subtitle: "Advisor",
           desc: "Mr. Thanh has been involving in cryptocurrencies since 2016 as a Bitcoin miner and investor. He got his MBA from UWIC and worked as a manager in Vingroup and later as the CTO of Nexty (a public chain project). In 2017, Thanh founded ezDeFi and launched various products. Thanh is currently CEO of ezDeFi and the project is reaching constant new growth."
-        }
+        },
+        {
+          title: "Mr. Evan Luthra",
+          subtitle: "Investor and Entrepreneur.",
+          desc: "Evan Luthra is an entrepreneur who builds and invests in fast growing technology companies via his Incubator Fund StartupStudio.online . He is a thought leader in the blockchain and cryptocurrencies space. Evan Luthra has been the topic of various TV shows and has spoken live at hundreds of events in over 50+ countries. Evan Luthra has millions of followers across various social networks. He supports us in various fields, especially marketing strategy and promotional tactics."
+        },
       ]
     }
   }

@@ -526,6 +526,11 @@ export default {
             title: "Co-Founder and COO of BSC News.",
             bio: "As our investor, advisor, and communication partner, he will assist our project on community development and brand marketing. Furthermore, he will connect us with his extensive network of partners who can support the development of our project."
           },
+          {
+            name: "Evan Luthra",
+            title: "Investor and Entrepreneur.",
+            bio: "Evan Luthra is an entrepreneur who builds and invests in fast growing technology companies via his Incubator Fund StartupStudio.online . He is a thought leader in the blockchain and cryptocurrencies space. Evan Luthra has been the topic of various TV shows and has spoken live at hundreds of events in over 50+ countries. Evan Luthra has millions of followers across various social networks. He supports us in various fields, especially marketing strategy and promotional tactics."
+          },
           // {
           //   name: "Nam Nguyen",
           //   title: "COO Gourmet Galaxy, CEO Tag Ventures",
