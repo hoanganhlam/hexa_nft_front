@@ -249,27 +249,37 @@
         </div>
         <div class="mb-20 text-center">
           <h2 class="text-3xl text-center md:text-5xl mb-4 font-medium mt-4 mb-16">Advisor</h2>
-          <div class="flex -mx-4 justify-center flex-wrap mx-auto justify-center">
-            <div v-for="(item, i) in s7.advisors" :key="i" class="relative md:w-1/3 p-4">
-              <img src="/about-bg.png" alt="BG">
-              <div class="absolute -top-10 left-0 right-0 bottom-0 flex flex-col py-2 px-16 h-full">
-                <div class="flex justify-center">
-                  <div class="w-1/4">
-                    <div class="rounded-1by1">
-                      <img class="object-contain p-1" style="background-color: rgb(246 225 200)"
-                           :src="`/assets/Team/${item.name}.png`" :alt="item.title">
+          <div class="wrap-slider">
+            <div class="slider">
+              <template v-for="(item, i) in s7.advisors">
+                <div :key="i" class="relative md:w-1/3 p-4" :class="{'md:hidden': i > 2}">
+                  <img src="/about-bg.png" alt="BG">
+                  <div class="absolute -top-10 left-0 right-0 bottom-0 flex flex-col py-2 px-16 h-full">
+                    <div class="flex justify-center">
+                      <div class="w-1/4">
+                        <div class="rounded-1by1">
+                          <img class="object-contain p-1" style="background-color: rgb(246 225 200)"
+                               :src="`/assets/Team/${item.name}.png`" :alt="item.title">
+                        </div>
+                        <a v-if="item.link" :href="item.link" target="_blank">
+                          <icon name="linkedin"></icon>
+                        </a>
+                      </div>
                     </div>
-                    <a v-if="item.link" :href="item.link" target="_blank">
-                      <icon name="linkedin"></icon>
-                    </a>
+                    <div>
+                      <h3 class="text-gray-800 text-center font-bold text-lg">{{ item.name }}</h3>
+                      <h4 class="text-gray-700 text-center text-sm">{{ item.title }}</h4>
+                      <div class="text-gray-600 text-xs" v-html="item.bio"></div>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <h3 class="text-gray-800 text-center font-bold text-lg">{{ item.name }}</h3>
-                  <h4 class="text-gray-700 text-center text-sm">{{ item.title }}</h4>
-                  <div class="text-gray-600 text-xs" v-html="item.bio"></div>
-                </div>
-              </div>
+              </template>
+            </div>
+            <div class="control left" @click="slide()">
+              <icon name="left"></icon>
+            </div>
+            <div class="control right" @click="slide(true)">
+              <icon name="right"></icon>
             </div>
           </div>
         </div>
@@ -289,7 +299,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
     <transition name="fade">
@@ -505,7 +514,6 @@ export default {
           // }
         ],
         advisors: [
-
           // {
           //   name: "Johnny Tri Dung",
           //   title: "Chief Business Officer at Kardiachain",
@@ -531,11 +539,11 @@ export default {
             title: "Investor and Entrepreneur.",
             bio: "Evan Luthra is an entrepreneur who builds and invests in fast growing technology companies via his Incubator Fund StartupStudio.online . He is a thought leader in the blockchain and cryptocurrencies space. Evan Luthra has been the topic of various TV shows and has spoken live at hundreds of events in over 50+ countries. Evan Luthra has millions of followers across various social networks. He supports us in various fields, especially marketing strategy and promotional tactics."
           },
-          // {
-          //   name: "Nam Nguyen",
-          //   title: "COO Gourmet Galaxy, CEO Tag Ventures",
-          //   bio: "Nam Nguyen is CEO of TAG Vietnam and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
-          // },
+          {
+            name: "Nam Nguyen",
+            title: "COO Gourmet Galaxy, CEO Tag Ventures",
+            bio: "Nam Nguyen is CEO of TAG Vietnam and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
+          },
         ],
         inverters: [
           {
@@ -583,6 +591,15 @@ export default {
       this.dataset = res;
       this.fetching = false;
     })
+  },
+  methods: {
+    slide(flag) {
+      if (flag) {
+        this.s7.advisors.push(this.s7.advisors.shift())
+      } else {
+        this.s7.advisors.unshift(this.s7.advisors.pop())
+      }
+    }
   }
 }
 </script>
@@ -652,5 +669,33 @@ details summary::-webkit-details-marker {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.wrap-slider {
+  @apply w-full relative;
+}
+
+.wrap-slider .control {
+  position: absolute;
+  top: calc(50% - 2rem);
+  cursor: pointer;
+  border: 2px #FFF solid;
+  border-radius: 50%;
+}
+
+.wrap-slider .control.left {
+left: -6rem;
+}
+
+.wrap-slider .control.right {
+right: -6rem;
+}
+
+.wrap-slider .control svg {
+  width: 4rem;
+  height: 4rem;
+}
+.slider {
+  @apply md:flex -mx-4 justify-center mx-auto justify-center;
 }
 </style>
