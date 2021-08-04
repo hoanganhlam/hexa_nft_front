@@ -252,7 +252,7 @@
           <div class="wrap-slider">
             <div class="slider">
               <template v-for="(item, i) in s7.advisors">
-                <div :key="i" class="relative md:w-1/3 p-4" :class="{'md:hidden': i > 2}">
+                <div :key="i" class="relative md:w-1/3 p-4" :class="{'md:hidden': i > 2, 'mb-hidden': item.hidden}">
                   <img src="/about-bg.png" alt="BG">
                   <div class="absolute -top-10 left-0 right-0 bottom-0 flex flex-col py-2 px-16 h-full">
                     <div class="flex justify-center">
@@ -540,6 +540,7 @@ export default {
             bio: "Evan Luthra is an entrepreneur who builds and invests in fast growing technology companies via his Incubator Fund StartupStudio.online . He is a thought leader in the blockchain and cryptocurrencies space. Evan Luthra has been the topic of various TV shows and has spoken live at hundreds of events in over 50+ countries. Evan Luthra has millions of followers across various social networks. He supports us in various fields, especially marketing strategy and promotional tactics."
           },
           {
+            hidden: true,
             name: "Nam Nguyen",
             title: "COO Gourmet Galaxy, CEO Tag Ventures",
             bio: "Nam Nguyen is CEO of TAG Vietnam and Founder of TAG Ventures, one of South East Asia's leading venture capital firms. He is also Chief Operating Officer of Gourmet Galaxy (GUM), a Yield Farming platform. Mr. Nam advises us on operating system, entry new markets strategy to expand market share and sustainable development builded by stable company structure."
@@ -697,5 +698,11 @@ right: -6rem;
 }
 .slider {
   @apply md:flex -mx-4 justify-center mx-auto justify-center;
+}
+
+@media only screen and (max-width: 600px) {
+  .mb-hidden {
+    display: none;
+  }
 }
 </style>
